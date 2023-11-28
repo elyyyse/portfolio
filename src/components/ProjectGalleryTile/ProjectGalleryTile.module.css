@@ -1,0 +1,7 @@
+.imageWrapper {
+  /* width: 18.75rem; */
+  width: calc(300rem / 16);
+  /* height: 13.5rem; */
+  height: calc(216rem / 16);
+  background-color: lightgray;
+}

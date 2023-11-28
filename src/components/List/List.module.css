@@ -1,0 +1,11 @@
+.list {
+  list-style-type: none;
+}
+
+.listItem {
+  font-size: 0.8rem;
+}
+
+/* .listItem::after {
+  content: ' • ';
+} */

@@ -1,0 +1,21 @@
+.link {
+  display: inline-block;
+  color: #000;
+}
+
+.link:visited {
+  color: #000;
+}
+
+.icon {
+  color: #463f3a;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  @media (prefers-reduced-motion: no-preference) {
+    .link:hover {
+      transition: all 0.2s ease-in-out;
+      transform: scale(1.1) translateY(-4%);
+    }
+  }
+}
