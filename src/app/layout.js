@@ -1,13 +1,10 @@
-import Link from 'next/link';
-import Image from 'next/image';
-
 import { Marcellus } from 'next/font/google';
 
 import Navigation from '@/components/Navigation';
+import Footer from '@/components/Footer';
 import './globals.css';
 
 const marcellus = Marcellus({ subsets: ['latin'], weight: '400' });
-// <body className={noto.className}>
 
 export const metadata = {
   title: 'Elyse Kanagaratnam',
@@ -22,6 +19,9 @@ export default function RootLayout({ children }) {
           <Navigation />
         </header>
         {children}
+        <footer>
+          <Footer />
+        </footer>
       </body>
     </html>
   );

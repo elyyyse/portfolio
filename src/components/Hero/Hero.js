@@ -16,16 +16,22 @@ const RAINBOW_COLORS = [
   '#760088',
 ];
 
-function draw(mousePosition, canvasBox, width, height, numColors, ctx) {
+function draw(
+  mousePosition,
+  canvasBox,
+  width,
+  height,
+  numRows,
+  numCols,
+  numColors,
+  ctx
+) {
   const relativeMousePos = {
     x: mousePosition.x - canvasBox.left,
     y: mousePosition.y - canvasBox.top,
   };
 
   ctx.clearRect(0, 0, width, height);
-
-  const numRows = 16;
-  const numCols = 16;
 
   range(numColors).map(colorIndex => {
     const xOffset = (width / numColors) * colorIndex;
@@ -37,7 +43,9 @@ function draw(mousePosition, canvasBox, width, height, numColors, ctx) {
         const deltaX = Math.abs(x - relativeMousePos.x);
         const deltaY = Math.abs(y - relativeMousePos.y);
         const distance = Math.sqrt(deltaX ** 2 + deltaY ** 2);
-        let radius = normalize(distance, 0, 75, 10, 1);
+        const maxDistFromCursor = 75;
+        const maxRadius = 100;
+        let radius = normalize(distance, 0, maxDistFromCursor, maxRadius, 1);
         radius = clamp(radius, 0, width);
 
         ctx.beginPath();
@@ -52,21 +60,23 @@ function draw(mousePosition, canvasBox, width, height, numColors, ctx) {
 
 function Hero({ className, numColors = 6, ...delegated }) {
   const width = typeof window === 'undefined' ? 1000 : window.innerWidth;
-  const height = 200;
+  const height = 475;
+  const numRows = 16;
+  const numCols = 16;
 
   const { canvasRef, canvasBox, ctx } = useCanvas(width, height);
   const mousePos = useMousePosition();
 
   if (mousePos && canvasBox) {
-    draw(mousePos, canvasBox, width, height, numColors, ctx);
+    draw(mousePos, canvasBox, width, height, numRows, numCols, numColors, ctx);
   }
 
   return (
     <canvas
+      {...delegated}
       ref={canvasRef}
       className={`${styles.canvas} ${className}`}
       role='presentation'
-      {...delegated}
     ></canvas>
   );
 }

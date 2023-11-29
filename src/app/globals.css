@@ -49,9 +49,10 @@ h6 {
 .MuiTooltip-tooltip,
 .MuiTooltip-tooltip a,
 .MuiTooltip-tooltip a:visited {
-  font-family: 'Anonymous Pro', 'Courier New', Courier, monospace;
+  font-family: 'Anonymous Pro', 'Courier Prime', 'Courier New', Courier,
+    monospace;
   font-size: 1rem;
-  font-weight: 700;
+  /* font-weight: 700; */
   line-height: 1.5;
   color: #fff;
   background-color: #002c3d;

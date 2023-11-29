@@ -1,7 +1,53 @@
-.imageWrapper {
-  /* width: 18.75rem; */
-  width: calc(300rem / 16);
-  /* height: 13.5rem; */
-  height: calc(216rem / 16);
-  background-color: lightgray;
+.link,
+.link:visited {
+  color: #000;
+  text-decoration: none;
+}
+
+.regThumbnail {
+  width: 300px;
+  height: auto;
+}
+
+.wideThumbnail {
+  width: 650px;
+  height: auto;
+}
+
+.textWrapper {
+  padding: 5px 5px 0 5px;
+}
+
+.projectTitle {
+  font-size: 1rem;
+}
+
+.projectBlurb {
+  font-size: 0.8rem;
+  margin-top: 10px;
+}
+
+.cta {
+  margin-top: 10px;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  text-decoration: underline 0.15em rgba(0, 0, 0, 0);
+  text-underline-offset: 0.5em;
+  transition: text-decoration-color 300ms;
+}
+
+.comingSoon {
+  cursor: default;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  @media (prefers-reduced-motion: no-preference) {
+    .link:hover:not(.comingSoon) {
+      .cta {
+        text-decoration-color: rgba(0, 0, 0, 1);
+      }
+      transition: all 0.2s ease-in-out;
+      transform: scale(1.02) translateY(-1%);
+    }
+  }
 }

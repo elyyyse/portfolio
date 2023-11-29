@@ -2,7 +2,7 @@
 import React from 'react';
 import localFont from 'next/font/local';
 import Link from 'next/link';
-import Image from 'next/image';
+import { usePathname } from 'next/navigation';
 import { motion } from 'framer-motion';
 import { ChevronDown } from 'react-feather';
 
@@ -24,7 +24,7 @@ const logo = {
   },
 };
 
-function Navigation() {
+function Navigation({}) {
   console.info(
     "Oh hi. ʕ•ᴥ•ʔ I'm betting you came here to do some due diligence."
   );
@@ -35,6 +35,10 @@ function Navigation() {
     'if you have any questions or see opportunities for improvement.'
   );
   console.info('✉️ elyse@hey.com');
+
+  const pathname = usePathname();
+  const homepageNav = pathname === '/' ? `${styles.homepageNav}` : undefined;
+  // TODO: if pathname === code || film || about, underline with svg
 
   return (
     <nav className={`${anon.className} ${styles.nav}`}>
@@ -67,17 +71,23 @@ function Navigation() {
           </Link>
         </li>
         <li>
-          <Link href='/code'>code</Link>
+          <Link href='/code' className={homepageNav}>
+            code
+          </Link>
         </li>
         <li>
-          <Link href='/film/bts'>film</Link>
+          <Link href='/film/bts' className={homepageNav}>
+            film
+          </Link>
           {/* <button>
             <ChevronDown />
           </button> */}
         </li>
         {/* <SubNav /> */}
         <li>
-          <Link href='/about'>about</Link>
+          <Link href='/about' className={homepageNav}>
+            about
+          </Link>
         </li>
       </ul>
     </nav>
