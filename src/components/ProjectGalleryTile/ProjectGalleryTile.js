@@ -26,12 +26,10 @@ function ProjectGalleryTile({
   return (
     <Link
       className={linkContainerClass}
-      href={!comingSoon ? slug : '#coming-soon'}
+      href={slug}
+      style={comingSoon ? { pointerEvents: 'none' } : undefined}
     >
-      <div
-        id={comingSoon ? 'coming-soon' : undefined}
-        className={imageWidthClass}
-      >
+      <div className={imageWidthClass}>
         <div className={styles.imageWrapper}>
           <Image
             src={imageSrc}
@@ -43,7 +41,7 @@ function ProjectGalleryTile({
         <div className={styles.textWrapper}>
           <h3 className={styles.projectTitle}>{title}</h3>
           <p className={styles.projectBlurb}>{children}</p>
-          {!comingSoon && <p className={styles.cta}>{cta}</p>}
+          {!comingSoon && <p className={styles.cta}>{cta} &gt;</p>}
         </div>
       </div>
     </Link>

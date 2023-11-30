@@ -57,7 +57,7 @@ export default function Home() {
         <ProjectGalleryTile
           title='Frontend Todo App'
           cta='Learn more'
-          imageSrc='/todo-app.jpg'
+          imageSrc='/thumbnails/todo-app.jpg'
           altText='Todo app thumbnail showing a list of todos in night and day modes'
           slug='/code/todo-app'
         >
@@ -67,17 +67,16 @@ export default function Home() {
         <ProjectGalleryTile
           title='Age Calculator'
           cta='Learn more'
-          imageSrc='/age-calc-app.jpg'
+          imageSrc='/thumbnails/age-calc-app.jpg'
           altText='Age calculator thumbnail showing the empty load state'
           slug='/code/age-calc'
         >
           An app that calculates the user&apos;s age in years, months, and days.
         </ProjectGalleryTile>
         <ProjectGalleryTile
-          featured
           title='Really Cool Project'
           cta='Check it out'
-          imageSrc='/coming-soon.png'
+          imageSrc='/thumbnails/coming-soon.png'
           altText=''
           slug='/code/dope-project'
         >
@@ -86,7 +85,7 @@ export default function Home() {
         <ProjectGalleryTile
           title='Random Advice Generator'
           cta='Get some advice'
-          imageSrc='/advice-app.jpg'
+          imageSrc='/thumbnails/advice-app.jpg'
           altText="Advice app thumbnail that says 'If you don't want something to be public, don't post it on the internet.'"
           slug='/code/age-calc'
         >
@@ -94,19 +93,22 @@ export default function Home() {
           &lsquo;Advice Slip&rsquo;.
         </ProjectGalleryTile>
         <ProjectGalleryTile
+          featured
           title='Rainbow Canvas'
           cta='Read about...'
-          imageSrc='/rainbow-canvas.png'
+          imageSrc='/thumbnails/rainbow-canvas.png'
           altText='A rectangular grid of dots in the colors of the rainbow'
-          slug='rainbow'
+          slug='/code/rainbow'
         ></ProjectGalleryTile>
         <ProjectGalleryTile
           comingSoon
           title='Tell Me More'
-          imageSrc='/coming-soon.png'
+          imageSrc='/thumbnails/coming-soon.png'
           altText=''
         >
-          A thing I&apos;m working on, but it isn&apos;t ready yet
+          A thing I&apos;m working on, but it isn&apos;t ready yet. A thing
+          I&apos;m working on, but it isn&apos;t ready yet. A thing I&apos;m
+          working on, but it isn&apos;t ready yet
         </ProjectGalleryTile>
       </div>
       <h2 className={styles.h2}>

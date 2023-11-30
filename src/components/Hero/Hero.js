@@ -7,13 +7,22 @@ import { range, clamp, normalize } from '@/utilities';
 
 import styles from './Hero.module.css';
 
+// const RAINBOW_COLORS = [
+//   '#ff1e26',
+//   '#fe941e',
+//   '#ffff00',
+//   '#06bd00',
+//   '#001a98',
+//   '#760088',
+// ];
+
 const RAINBOW_COLORS = [
-  '#ff1e26',
-  '#fe941e',
-  '#ffff00',
-  '#06bd00',
-  '#001a98',
-  '#760088',
+  '#CF4B4A',
+  '#EBAF41',
+  '#ebda41',
+  '#48A56A',
+  '#6688C4',
+  '#B25DA6',
 ];
 
 function draw(

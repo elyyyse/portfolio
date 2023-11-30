@@ -2,9 +2,9 @@
   list-style-type: none;
 }
 
-.listItem {
+/* .listItem {
   font-size: 0.8rem;
-}
+} */
 
 /* .listItem::after {
   content: ' • ';

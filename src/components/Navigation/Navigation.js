@@ -9,6 +9,7 @@ import { ChevronDown } from 'react-feather';
 const anon = localFont({
   src: './anonymouspro/AnonymousPro-Regular.ttf',
 });
+
 import styles from './Navigation.module.css';
 
 const logo = {
@@ -24,7 +25,7 @@ const logo = {
   },
 };
 
-function Navigation({}) {
+function Navigation() {
   console.info(
     "Oh hi. ʕ•ᴥ•ʔ I'm betting you came here to do some due diligence."
   );
@@ -37,8 +38,9 @@ function Navigation({}) {
   console.info('✉️ elyse@hey.com');
 
   const pathname = usePathname();
+
   const homepageNav = pathname === '/' ? `${styles.homepageNav}` : undefined;
-  // TODO: if pathname === code || film || about, underline with svg
+  // TODO: update nav strikethrough to be svg underlines
 
   return (
     <nav className={`${anon.className} ${styles.nav}`}>
@@ -71,12 +73,28 @@ function Navigation({}) {
           </Link>
         </li>
         <li>
-          <Link href='/code' className={homepageNav}>
+          <Link
+            href='/code'
+            className={homepageNav}
+            style={
+              pathname.startsWith('/code')
+                ? { textDecoration: 'line-through' }
+                : undefined
+            }
+          >
             code
           </Link>
         </li>
         <li>
-          <Link href='/film/bts' className={homepageNav}>
+          <Link
+            href='/film/bts'
+            className={homepageNav}
+            style={
+              pathname.startsWith('/film')
+                ? { textDecoration: 'line-through' }
+                : undefined
+            }
+          >
             film
           </Link>
           {/* <button>
@@ -85,7 +103,15 @@ function Navigation({}) {
         </li>
         {/* <SubNav /> */}
         <li>
-          <Link href='/about' className={homepageNav}>
+          <Link
+            href='/about'
+            className={homepageNav}
+            style={
+              pathname === '/about'
+                ? { textDecoration: 'line-through' }
+                : undefined
+            }
+          >
             about
           </Link>
         </li>

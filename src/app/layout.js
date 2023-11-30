@@ -19,9 +19,7 @@ export default function RootLayout({ children }) {
           <Navigation />
         </header>
         {children}
-        <footer>
-          <Footer />
-        </footer>
+        <Footer />
       </body>
     </html>
   );
