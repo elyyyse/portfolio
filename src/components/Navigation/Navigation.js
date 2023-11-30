@@ -4,6 +4,7 @@ import localFont from 'next/font/local';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { motion } from 'framer-motion';
+import * as NavigationMenu from '@radix-ui/react-navigation-menu';
 import { ChevronDown } from 'react-feather';
 
 const anon = localFont({
@@ -43,10 +44,12 @@ function Navigation() {
   // TODO: update nav strikethrough to be svg underlines
 
   return (
-    <nav className={`${anon.className} ${styles.nav}`}>
-      <ul className={styles.navigationList}>
-        <li className={styles.home}>
-          <Link href='/'>
+    <NavigationMenu.Root delayDuration={100}>
+      <NavigationMenu.List
+        className={`${anon.className} ${styles.navigationList}`}
+      >
+        <NavigationMenu.Item className={styles.logo}>
+          <NavLink href='/'>
             <motion.svg
               width='6.25rem'
               height='1.5rem'
@@ -70,10 +73,11 @@ function Navigation() {
                 }}
               />
             </motion.svg>
-          </Link>
-        </li>
-        <li>
-          <Link
+          </NavLink>
+        </NavigationMenu.Item>
+
+        <NavigationMenu.Item>
+          <NavLink
             href='/code'
             className={homepageNav}
             style={
@@ -83,12 +87,12 @@ function Navigation() {
             }
           >
             code
-          </Link>
-        </li>
-        <li>
-          <Link
-            href='/film/bts'
-            className={homepageNav}
+          </NavLink>
+        </NavigationMenu.Item>
+
+        <NavigationMenu.Item className={styles.subMenuContainer}>
+          <NavigationMenu.Trigger
+            className={`${styles.subMenuTrigger} ${homepageNav}`}
             style={
               pathname.startsWith('/film')
                 ? { textDecoration: 'line-through' }
@@ -96,14 +100,32 @@ function Navigation() {
             }
           >
             film
-          </Link>
-          {/* <button>
-            <ChevronDown />
-          </button> */}
-        </li>
-        {/* <SubNav /> */}
-        <li>
-          <Link
+            <ChevronDown className={styles.chevronDown} size={16} aria-hidden />
+          </NavigationMenu.Trigger>
+          <NavigationMenu.Content className={styles.subMenu}>
+            <NavigationMenu.Sub defaultValue='bts'>
+              <NavigationMenu.List className={styles.subMenuList}>
+                <NavigationMenu.Item className={styles.subMenuItem} value='bts'>
+                  <NavLink href='/film/bts' className={homepageNav}>
+                    behind the scenes
+                  </NavLink>
+                </NavigationMenu.Item>
+                <NavigationMenu.Item
+                  className={styles.subMenuItem}
+                  value='on-cam'
+                >
+                  <NavLink href='/film/on-cam' className={homepageNav}>
+                    on camera
+                  </NavLink>
+                </NavigationMenu.Item>
+              </NavigationMenu.List>
+              {/* <NavigationMenu.Viewport className={styles.viewport} /> */}
+            </NavigationMenu.Sub>
+          </NavigationMenu.Content>
+        </NavigationMenu.Item>
+
+        <NavigationMenu.Item>
+          <NavLink
             href='/about'
             className={homepageNav}
             style={
@@ -113,32 +135,19 @@ function Navigation() {
             }
           >
             about
-          </Link>
-        </li>
-      </ul>
-    </nav>
+          </NavLink>
+        </NavigationMenu.Item>
+      </NavigationMenu.List>
+    </NavigationMenu.Root>
   );
 }
 
-// const Button = React.forwardRef(function Button(props, ref, children) {
-//   return (
-//     <button {...props} ref={ref}>
-//       {children}
-//     </button>
-//   );
-// });
-
-const SubNav = React.forwardRef(function SubNav(props, ref) {
+function NavLink({ href, ...props }) {
   return (
-    <ul {...props} ref={ref}>
-      <li>
-        <Link href='/film/bts'>behind the scenes</Link>
-      </li>
-      <li>
-        <Link href='/film/on-cam'>on camera</Link>
-      </li>
-    </ul>
+    <Link href={href} passHref legacyBehavior>
+      <NavigationMenu.Link className='NavigationMenuLink' {...props} />
+    </Link>
   );
-});
+}
 
 export default Navigation;

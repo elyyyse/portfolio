@@ -135,14 +135,6 @@ export default function Home() {
             Material UI
             <Footnote>For accessible extras like this tooltip</Footnote>
           </li>
-          {/* <li className={styles.listItem}>
-            <Feather
-              size={16}
-              strokeWidth={1.5}
-              style={{ display: 'inline' }}
-            />
-            react-feather / lucide-react
-          </li> */}
         </div>
       </List>
     </main>
