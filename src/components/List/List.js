@@ -3,17 +3,19 @@ import { Dot } from 'lucide-react';
 
 import styles from './List.module.css';
 
-function List({ children, ...delegated }) {
-  const listItems = [...children];
+function List({ bullets = false, children, ...delegated }) {
+  // const listItems = [...children];
+  // {listItems.map((item, index) => ())}
 
   return (
     <ul className={styles.list} {...delegated}>
-      {listItems.map((item, index) => (
-        <React.Fragment key={index}>
-          {/* <Dot className={styles.listItem} /> */}
-          <li className={styles.listItem}>{item.props.children}</li>
-        </React.Fragment>
-      ))}
+      {children}
+      {/* <React.Fragment key={index}>
+          <Dot className={styles.listItem} />
+          <li className={bullets ? `${styles.bullets}` : `${styles.none}`}>
+            {item.props.children}
+          </li>
+        </React.Fragment> */}
     </ul>
   );
 }

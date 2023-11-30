@@ -1,5 +1,5 @@
 export const PROJECT_DETAILS = {
-  abstract: [
+  abstracts: [
     {
       title: 'Frontend Todo App',
       blurb:
@@ -25,12 +25,12 @@ export const PROJECT_DETAILS = {
     {
       title: 'Rainbow Canvas',
       blurb:
-        'An walk-thru of how I created the interactive hero at the top of this page. 🏳️‍🌈',
+        'A walk-thru of how I created the interactive hero at the top of this page. 🏳️‍🌈',
       cta: 'Read story',
-      image: '/thumbnails/rainbow-canvas.jpg',
+      image: '/thumbnails/rainbow-canvas.png',
       alt: 'A rectangular grid of dots in the colors of the rainbow',
       slug: '/code/rainbow',
-      featured: true,
+      featured: false,
       comingSoon: false,
     },
     {

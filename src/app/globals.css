@@ -46,16 +46,20 @@ h6 {
 /* 
   Styles for Material UI Tooltip component — built into Footnote facade component
 */
+.MuiTooltip-tooltip {
+  background-color: #002c3d;
+  padding: 10px;
+}
+
 .MuiTooltip-tooltip,
 .MuiTooltip-tooltip a,
 .MuiTooltip-tooltip a:visited {
   font-family: 'Anonymous Pro', 'Courier Prime', 'Courier New', Courier,
     monospace;
-  font-size: 1rem;
+  font-size: 0.9rem;
   /* font-weight: 700; */
   line-height: 1.5;
   color: #fff;
-  background-color: #002c3d;
 }
 
 .MuiTooltip-arrow {

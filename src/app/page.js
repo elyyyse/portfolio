@@ -1,4 +1,15 @@
 import Link from 'next/link';
+import {
+  SquareDashedBottomCode,
+  FileJson2,
+  Framer,
+  Braces,
+  Paintbrush2,
+  PocketKnife,
+  Feather,
+} from 'lucide-react';
+
+import { PROJECT_DETAILS } from '@/constants';
 
 import Hero from '@/components/Hero';
 import SocialIconLink from '@/components/SocialIconLink';
@@ -9,6 +20,8 @@ import Footnote from '@/components/Footnote';
 import styles from './page.module.css';
 
 export default function Home() {
+  const { abstracts } = PROJECT_DETAILS;
+
   return (
     <main className={styles.gridWrapper}>
       <Hero className={styles.fullBleed}></Hero>
@@ -54,99 +67,84 @@ export default function Home() {
         Here are some things I&apos;ve been working on
       </h2>
       <div className={styles.projectsWrapper}>
-        <ProjectGalleryTile
-          title='Frontend Todo App'
-          cta='Learn more'
-          imageSrc='/thumbnails/todo-app.jpg'
-          altText='Todo app thumbnail showing a list of todos in night and day modes'
-          slug='/code/todo-app'
-        >
-          A todo web application that uses local browser storage. Features
-          include drag-and-drop task reordering and day/night modes.
-        </ProjectGalleryTile>
-        <ProjectGalleryTile
-          title='Age Calculator'
-          cta='Learn more'
-          imageSrc='/thumbnails/age-calc-app.jpg'
-          altText='Age calculator thumbnail showing the empty load state'
-          slug='/code/age-calc'
-        >
-          An app that calculates the user&apos;s age in years, months, and days.
-        </ProjectGalleryTile>
-        <ProjectGalleryTile
-          title='Really Cool Project'
-          cta='Check it out'
-          imageSrc='/thumbnails/coming-soon.png'
-          altText=''
-          slug='/code/dope-project'
-        >
-          A project I am really proud of
-        </ProjectGalleryTile>
-        <ProjectGalleryTile
-          title='Random Advice Generator'
-          cta='Get some advice'
-          imageSrc='/thumbnails/advice-app.jpg'
-          altText="Advice app thumbnail that says 'If you don't want something to be public, don't post it on the internet.'"
-          slug='/code/age-calc'
-        >
-          A silly app that generates a random piece of advice from an API called
-          &lsquo;Advice Slip&rsquo;.
-        </ProjectGalleryTile>
-        <ProjectGalleryTile
-          featured
-          title='Rainbow Canvas'
-          cta='Read about...'
-          imageSrc='/thumbnails/rainbow-canvas.png'
-          altText='A rectangular grid of dots in the colors of the rainbow'
-          slug='/code/rainbow'
-        ></ProjectGalleryTile>
-        <ProjectGalleryTile
-          comingSoon
-          title='Tell Me More'
-          imageSrc='/thumbnails/coming-soon.png'
-          altText=''
-        >
-          A thing I&apos;m working on, but it isn&apos;t ready yet. A thing
-          I&apos;m working on, but it isn&apos;t ready yet. A thing I&apos;m
-          working on, but it isn&apos;t ready yet
-        </ProjectGalleryTile>
+        {abstracts.map(
+          ({ title, blurb, cta, image, alt, slug, featured, comingSoon }) => (
+            <ProjectGalleryTile
+              key={slug}
+              title={title}
+              cta={cta}
+              imageSrc={image}
+              altText={alt}
+              slug={slug}
+              featured={featured}
+              comingSoon={comingSoon}
+            >
+              {blurb}
+            </ProjectGalleryTile>
+          )
+        )}
       </div>
-      <h2 className={styles.h2}>
-        A list of lists<Footnote>I like lists</Footnote>
+      <h2 className={`${styles.h2} ${styles.listHeader}`}>
+        This portfolio site is built with:
       </h2>
-      <div className={styles.listsWrapper}>
-        <div className={styles.listContainer}>
-          <h3 className={styles.listHeader}>
-            This portfolio site is built with:
-          </h3>
-          <List>
-            <li>React</li>
-            <li>Next</li>
-            <li>Framer Motion</li>
-            <li>CSS Modules</li>
-            <li>HTML Canvas, CSS Grid and Flexbox ??</li>
-            <li>Material UI — for accessible extras like tooltips</li>
-            {/* <li>react-feather and lucide-react</li> */}
-          </List>
+      <List>
+        <div className={styles.listWrapper}>
+          <li className={styles.listItem}>
+            <SquareDashedBottomCode
+              size={16}
+              strokeWidth={1.5}
+              style={{ display: 'inline' }}
+            />
+            React
+          </li>
+          <li className={styles.listItem}>
+            <FileJson2
+              size={16}
+              strokeWidth={1.5}
+              style={{ display: 'inline' }}
+            />
+            Next.js
+          </li>
+          <li className={styles.listItem}>
+            <Braces size={16} strokeWidth={1.5} style={{ display: 'inline' }} />
+            CSS Modules
+          </li>
+          <li className={styles.listItem}>
+            <Framer size={16} strokeWidth={1.5} style={{ display: 'inline' }} />
+            Framer Motion
+            <Footnote>
+              Just for the logo animation. Otherwise, I just used basic CSS
+              transforms and transitions.
+            </Footnote>
+          </li>
+
+          <li className={styles.listItem}>
+            <Paintbrush2
+              size={16}
+              strokeWidth={1.5}
+              style={{ display: 'inline' }}
+            />
+            HTML Canvas
+          </li>
+          <li className={styles.listItem}>
+            <PocketKnife
+              size={16}
+              strokeWidth={1.5}
+              style={{ display: 'inline' }}
+            />
+            Material UI
+            <Footnote>For accessible extras like this tooltip</Footnote>
+          </li>
+          {/* <li className={styles.listItem}>
+            <Feather
+              size={16}
+              strokeWidth={1.5}
+              style={{ display: 'inline' }}
+            />
+            react-feather / lucide-react
+          </li> */}
         </div>
-        <div className={styles.listContainer}>
-          <h3 className={styles.listHeader}>
-            Online educators I have a parasocial relationship with
-          </h3>
-          <List>
-            <li>
-              <Link href='https://www.coltsteele.com/' target='_blank'>
-                Colt Steele
-              </Link>
-            </li>
-            <li>
-              <Link href='https://www.joshwcomeau.com/' target='_blank'>
-                Josh Comeau
-              </Link>
-            </li>
-          </List>
-        </div>
-      </div>
+      </List>
     </main>
   );
 }

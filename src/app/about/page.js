@@ -1,4 +1,7 @@
 import Image from 'next/image';
+import Link from 'next/link';
+
+import List from '@/components/List';
 
 export default function About() {
   return (
@@ -27,6 +30,23 @@ export default function About() {
         height={334}
         alt='Painting of the portfolio author'
       />
+      <div className={styles.listContainer}>
+        <h3 className={styles.listHeader}>
+          Online educators I have a parasocial relationship with
+        </h3>
+        <List>
+          <li>
+            <Link href='https://www.coltsteele.com/' target='_blank'>
+              Colt Steele
+            </Link>
+          </li>
+          <li>
+            <Link href='https://www.joshwcomeau.com/' target='_blank'>
+              Josh Comeau
+            </Link>
+          </li>
+        </List>
+      </div>
     </>
   );
 }
