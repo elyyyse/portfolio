@@ -9,7 +9,7 @@
 }
 
 .icon {
-  color: #463f3a;
+  color: var(--icon-links);
 }
 
 @media (hover: hover) and (pointer: fine) {

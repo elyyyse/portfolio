@@ -103,11 +103,14 @@ function Navigation() {
             <ChevronDown className={styles.chevronDown} size={16} aria-hidden />
           </NavigationMenu.Trigger>
           <NavigationMenu.Content className={styles.subMenu}>
-            <NavigationMenu.Sub defaultValue='bts'>
+            <NavigationMenu.Sub defaultValue='prod'>
               <NavigationMenu.List className={styles.subMenuList}>
-                <NavigationMenu.Item className={styles.subMenuItem} value='bts'>
-                  <NavLink href='/film/bts' className={homepageNav}>
-                    behind the scenes
+                <NavigationMenu.Item
+                  className={styles.subMenuItem}
+                  value='prod'
+                >
+                  <NavLink href='/film/prod' className={homepageNav}>
+                    production
                   </NavLink>
                 </NavigationMenu.Item>
                 <NavigationMenu.Item

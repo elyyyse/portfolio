@@ -43,26 +43,24 @@ h6 {
   isolation: isolate;
 }
 
-/* 
-  Styles for Material UI Tooltip component — built into Footnote facade component
-*/
-.MuiTooltip-tooltip {
-  background-color: #002c3d;
-  padding: 10px;
+/* GLOBAL STYLES AND ROOT VARIABLES */
+
+html {
+  --accent-color: #233d4d;
+  --text-emphasis: #005f73;
+  --icon-links: #463f3a;
+  --bg-color: #f7f7f7;
+}
+body {
+  height: 100svh;
+  /* position: relative; */
 }
 
-.MuiTooltip-tooltip,
-.MuiTooltip-tooltip a,
-.MuiTooltip-tooltip a:visited {
-  font-family: 'Anonymous Pro', 'Courier Prime', 'Courier New', Courier,
-    monospace;
-  font-size: 0.9rem;
-  /* font-weight: 700; */
-  line-height: 1.5;
-  color: #fff;
+a,
+a:visited {
+  color: #000;
+  text-underline-offset: 0.2em;
 }
-
-.MuiTooltip-arrow {
-  color: #002c3d;
+a:hover {
+  text-decoration: none;
 }
-/* End styles for Material UI Tooltip component */

@@ -6,6 +6,7 @@ function Footer() {
   return (
     <footer className={styles.footer}>
       <div className={styles.contentWrapper}>
+        <p>Elyse Kanagaratnam</p>
         <p className={styles.leftAlign}>elyse@hey.com</p>
       </div>
     </footer>

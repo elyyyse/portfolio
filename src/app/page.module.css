@@ -25,7 +25,7 @@
 }
 
 .emphasize {
-  color: #005f73;
+  color: var(--text-emphasis);
 }
 
 .h2 {

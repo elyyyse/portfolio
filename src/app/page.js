@@ -33,7 +33,7 @@ export default function Home() {
       </h1>
       <div className={styles.introBody}>
         <p className={styles.introParagraph}>
-          While I&apos;m a classically trained filmmaker, I am a wild-built
+          While I&apos;m a formally trained filmmaker, I am a wild-built
           <Footnote>
             This is a reference to an excellent sci-fi novella called{' '}
             <Link
@@ -51,12 +51,18 @@ export default function Home() {
         </p>
 
         <p className={styles.introParagraph}>
-          In the world of film, representation is everything. Sharing stories is
-          a fundamental part of what makes us human, and it&apos;s imperative
-          that we hear perspectives from as many people as possible. The best
-          parallel I&apos;ve found in software is accessibility. It&apos;s a
-          difficult subject to nail down, but I aim to learn as much I can, so I
-          can make products for as many people as possible.
+          In the world of film,{' '}
+          <span className={styles.emphasize}>
+            <strong>representation</strong>
+          </span>{' '}
+          is everything. Sharing stories is a fundamental part of what makes us
+          human, and it&apos;s imperative that we hear perspectives from as many
+          people as possible. The best parallel I&apos;ve found in software is{' '}
+          <span className={styles.emphasize}>
+            <strong>accessibility</strong>
+          </span>
+          . It&apos;s a difficult subject to nail down, but I aim to learn as
+          much I can, so I can make products for as many people as possible.
         </p>
       </div>
       <div className={styles.socialIconLinks}>
@@ -68,16 +74,27 @@ export default function Home() {
       </h2>
       <div className={styles.projectsWrapper}>
         {abstracts.map(
-          ({ title, blurb, cta, image, alt, slug, featured, comingSoon }) => (
+          ({
+            title,
+            blurb,
+            cta,
+            images,
+            alt,
+            slug,
+            featured,
+            comingSoon,
+            priority,
+          }) => (
             <ProjectGalleryTile
               key={slug}
               title={title}
               cta={cta}
-              imageSrc={image}
+              imageOptions={images}
               altText={alt}
               slug={slug}
               featured={featured}
               comingSoon={comingSoon}
+              priority={priority}
             >
               {blurb}
             </ProjectGalleryTile>
@@ -113,8 +130,8 @@ export default function Home() {
             <Framer size={16} strokeWidth={1.5} style={{ display: 'inline' }} />
             Framer Motion
             <Footnote>
-              Just for the logo animation. Otherwise, I just used basic CSS
-              transforms and transitions.
+              For the logo animation. Otherwise, I used basic CSS transforms,
+              transitions, and keyframes.
             </Footnote>
           </li>
 
@@ -132,7 +149,7 @@ export default function Home() {
               strokeWidth={1.5}
               style={{ display: 'inline' }}
             />
-            Material UI
+            Radix UI
             <Footnote>For accessible extras like this tooltip</Footnote>
           </li>
         </div>

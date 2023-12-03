@@ -2,26 +2,27 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 
+import { ChevronRight } from 'lucide-react';
+
 import styles from './ProjectGalleryTile.module.css';
 
 function ProjectGalleryTile({
   title,
   children,
   cta,
-  imageSrc,
+  imageOptions,
   altText,
   slug = '/',
   featured = false,
   comingSoon = false,
+  priority = false,
 }) {
   const linkContainerClass = comingSoon
     ? `${styles.link} ${styles.comingSoon}`
     : `${styles.link}`;
 
-  const imageWidthClass =
-    featured || comingSoon
-      ? `${styles.wideThumbnail}`
-      : `${styles.regThumbnail}`;
+  const thumbnailState =
+    featured || comingSoon ? `${styles.featured}` : `${styles.standard}`;
 
   return (
     <Link
@@ -29,19 +30,43 @@ function ProjectGalleryTile({
       href={slug}
       style={comingSoon ? { pointerEvents: 'none' } : undefined}
     >
-      <div className={imageWidthClass}>
-        <div className={styles.imageWrapper}>
-          <Image
-            src={imageSrc}
-            alt={altText}
-            width={featured || comingSoon ? 650 : 300}
-            height={216}
-          />
-        </div>
+      <div className={thumbnailState}>
+        {imageOptions.wide && (
+          <div className={styles.wideThumbnail}>
+            <Image
+              src={imageOptions.wide}
+              alt={altText}
+              width={1440}
+              height={480}
+              priority={priority}
+            />
+          </div>
+        )}
+        {imageOptions.reg && (
+          <div className={styles.regThumbnail}>
+            <Image
+              src={imageOptions.reg}
+              alt={altText}
+              width={1440}
+              height={960}
+              priority={priority}
+            />
+          </div>
+        )}
+
         <div className={styles.textWrapper}>
           <h3 className={styles.projectTitle}>{title}</h3>
           <p className={styles.projectBlurb}>{children}</p>
-          {!comingSoon && <p className={styles.cta}>{cta} &gt;</p>}
+          {!comingSoon && (
+            <p className={styles.cta}>
+              {cta}{' '}
+              <ChevronRight
+                size={10}
+                strokeWidth={1.5}
+                style={{ display: 'inline' }}
+              />
+            </p>
+          )}
         </div>
       </div>
     </Link>

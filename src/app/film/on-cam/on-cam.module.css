@@ -1,0 +1,44 @@
+.h1,
+.h2,
+.h3 {
+  max-width: 80%;
+  margin: 3rem auto 0;
+  font-size: 2rem;
+  font-weight: 400;
+}
+.h1 {
+  line-height: 1.25;
+}
+.h2 {
+  line-height: 1;
+}
+
+.onScreen,
+.voiceovers {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 24px;
+}
+.h2 {
+  flex-basis: 100%;
+}
+.onScreen {
+  background-color: var(--bg-color);
+}
+.onScreen > *:not(.h2) {
+  flex-basis: 32%;
+}
+.voiceovers > *:not(.h2) {
+  flex-basis: 49%;
+}
+@media (min-width: 1200px) {
+  .onScreen,
+  .voiceovers {
+    flex-direction: row;
+  }
+  .h1 {
+    font-size: 3rem;
+  }
+}

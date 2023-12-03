@@ -9,3 +9,34 @@
   color: #ae2012;
   font-weight: 600;
 }
+
+.tooltip {
+  width: 25ch;
+  height: auto;
+  padding: 12px 0 12px 12px;
+  border-radius: 5px;
+  background-color: var(--accent-color);
+  transform-origin: var(--radix-tooltip-content-transform-origin);
+  animation: slideOut 0.1s ease-out;
+}
+
+@keyframes slideOut {
+  from {
+    transform: translateY(10%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.tooltip,
+.tooltip a,
+.tooltip a:visited {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #fff;
+}
+
+.tooltipArrow {
+  fill: var(--accent-color);
+}

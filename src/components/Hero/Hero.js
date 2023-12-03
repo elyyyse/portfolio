@@ -7,15 +7,6 @@ import { range, clamp, normalize } from '@/utilities';
 
 import styles from './Hero.module.css';
 
-// const RAINBOW_COLORS = [
-//   '#ff1e26',
-//   '#fe941e',
-//   '#ffff00',
-//   '#06bd00',
-//   '#001a98',
-//   '#760088',
-// ];
-
 const RAINBOW_COLORS = [
   '#CF4B4A',
   '#EBAF41',
