@@ -13,7 +13,7 @@
 .tooltip {
   width: 25ch;
   height: auto;
-  padding: 12px 0 12px 12px;
+  padding: 12px;
   border-radius: 5px;
   background-color: var(--accent-color);
   transform-origin: var(--radix-tooltip-content-transform-origin);

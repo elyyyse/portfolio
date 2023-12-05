@@ -4,6 +4,7 @@ import Link from 'next/link';
 import List from '@/components/List';
 
 import styles from './about.module.css';
+import Footnote from '@/components/Footnote';
 
 export const metadata = {
   title: 'About • Elyse Kanagaratnam',
@@ -61,17 +62,49 @@ export default function About() {
           </h3>
           <List>
             <li>
-              {/* <Link href='https://www.coltsteele.com/' target='_blank'> */}
-              Frontend Mentor
-              {/* </Link> */}
+              <Link href='https://www.frontendmentor.io/' target='_blank'>
+                Frontend Mentor
+              </Link>
             </li>
             <li>
-              {/* <Link href='https://www.joshwcomeau.com/' target='_blank'> */}
-              MDN
-              {/* </Link> */}
+              <Link href='https://developer.mozilla.org/en-US/' target='_blank'>
+                MDN
+              </Link>
             </li>
-            <li>W3 Authoring Practices Guide</li>
-            <li>CSS Tricks</li>
+            <li>
+              <Link
+                href='https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/'
+                target='_blank'
+              >
+                W3 Authoring Practices Guide
+              </Link>
+            </li>
+            <li>
+              <Link href='https://css-tricks.com/' target='_blank'>
+                CSS Tricks
+              </Link>
+            </li>
+          </List>
+        </div>
+
+        <div className={styles.listWrapper}>
+          <h3 className={styles.listHeader}>
+            Online educators I have a parasocial relationship with
+          </h3>
+          <List>
+            <li>
+              <Link
+                href='https://www.udemy.com/user/coltsteele/'
+                target='_blank'
+              >
+                Colt Steele
+              </Link>
+            </li>
+            <li>
+              <Link href='https://www.joshwcomeau.com/' target='_blank'>
+                Josh Comeau
+              </Link>
+            </li>
           </List>
         </div>
 
@@ -81,6 +114,7 @@ export default function About() {
             <li>Creative problem solving and how to learn quickly</li>
             <li>Incredible attention to detail</li>
             <li>The importance of whimsy</li>
+            <li>How to give and receive effective feedback</li>
           </List>
         </div>
 
@@ -91,24 +125,6 @@ export default function About() {
             <li>Do the Work - Steven Pressfield</li>
             <li>A Field Guide to Getting Lost - Rebecca Solnit</li>
             <li>A Secret History - Donna Tartt</li>
-          </List>
-        </div>
-
-        <div className={styles.listWrapper}>
-          <h3 className={styles.listHeader}>
-            Online educators I have a parasocial relationship with
-          </h3>
-          <List>
-            <li>
-              <Link href='https://www.coltsteele.com/' target='_blank'>
-                Colt Steele
-              </Link>
-            </li>
-            <li>
-              <Link href='https://www.joshwcomeau.com/' target='_blank'>
-                Josh Comeau
-              </Link>
-            </li>
           </List>
         </div>
       </div>

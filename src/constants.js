@@ -34,7 +34,7 @@ export const PROJECT_DETAILS = {
     {
       title: 'Rainbow Canvas',
       blurb:
-        'A walk-thru of how I created the interactive hero at the top of the homepage. 🏳️‍🌈',
+        'A walk-thru of how I created the interactive hero at the top of my homepage. 🏳️‍🌈',
       cta: 'Read story',
       images: {
         wide: '/thumbnails/rainbow-canvas-480.png',
@@ -59,6 +59,21 @@ export const PROJECT_DETAILS = {
       slug: '/code/age-calc',
       featured: false,
       comingSoon: false,
+      priority: false,
+    },
+    {
+      title: 'Coming Soon',
+      blurb:
+        "I'm in the process of cooking up my next project, but until then, here's a picture of a puppy in a box.",
+      cta: null,
+      images: {
+        wide: '',
+        reg: '/thumbnails/erda-estremera-sxNt9g77PE0-unsplash.jpg',
+      },
+      alt: '',
+      slug: '',
+      featured: false,
+      comingSoon: true,
       priority: false,
     },
   ],

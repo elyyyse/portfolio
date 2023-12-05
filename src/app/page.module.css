@@ -11,9 +11,9 @@
   grid-column: 2;
 }
 
-.fullBleed {
+.canvas {
   width: 100%;
-  grid-column: 1 / -1;
+  /* grid-column: 1 / -1; */
   position: absolute;
   top: 0;
 }

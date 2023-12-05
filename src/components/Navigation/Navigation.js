@@ -3,6 +3,7 @@ import React from 'react';
 import localFont from 'next/font/local';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+
 import { motion } from 'framer-motion';
 import * as NavigationMenu from '@radix-ui/react-navigation-menu';
 import { ChevronDown } from 'react-feather';
@@ -15,7 +16,7 @@ import styles from './Navigation.module.css';
 
 const logo = {
   hidden: {
-    opacity: 0,
+    opacity: 0.5,
     pathLength: 0,
     fill: 'rgba(0, 0, 0, 0)',
   },
@@ -27,9 +28,7 @@ const logo = {
 };
 
 function Navigation() {
-  console.info(
-    "Oh hi. ʕ•ᴥ•ʔ I'm betting you came here to do some due diligence."
-  );
+  console.info('Oh hi. ʕ•ᴥ•ʔ Here to dig a little deeper?');
   console.info(
     'I like that about you. Have a look around, and please let me know'
   );
@@ -39,7 +38,6 @@ function Navigation() {
   console.info('✉️ elyse@hey.com');
 
   const pathname = usePathname();
-
   const homepageNav = pathname === '/' ? `${styles.homepageNav}` : undefined;
   // TODO: update nav strikethrough to be svg underlines
 

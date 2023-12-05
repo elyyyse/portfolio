@@ -2,12 +2,12 @@ import React from 'react';
 import Script from 'next/script';
 import styles from './Video.module.css';
 
-function Video({ videoSrc, title }) {
+function Video({ videoSrc, title, className }) {
   return (
     <>
       <div
-        className={styles.video}
-        style={{ padding: '50% 0 0 0', position: 'relative' }}
+        className={`${styles.video} ${className}`}
+        style={{ position: 'relative' }}
       >
         <iframe
           className={styles.iframe}

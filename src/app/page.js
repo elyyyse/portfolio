@@ -11,7 +11,7 @@ import {
 
 import { PROJECT_DETAILS } from '@/constants';
 
-import Hero from '@/components/Hero';
+import Hero from '@/components/Hero/';
 import SocialIconLink from '@/components/SocialIconLink';
 import ProjectGalleryTile from '@/components/ProjectGalleryTile';
 import List from '@/components/List';
@@ -24,7 +24,7 @@ export default function Home() {
 
   return (
     <main className={styles.gridWrapper}>
-      <Hero className={styles.fullBleed}></Hero>
+      <Hero className={styles.canvas}></Hero>
       <h1 className={styles.introHeading}>
         Hello there, I&apos;m <span className={styles.emphasize}>Elyse</span>
         —a frontend developer who made a mid-career transition from filmmaking
@@ -42,7 +42,9 @@ export default function Home() {
             >
               &lsquo;A Psalm for the Wild-Built&rsquo; by Becky Chambers
             </Link>
-            .
+            . I could also call it &lsquo;self-taught&rsquo;, but that feels
+            insufficient when I consider the countless bloggers, tutorial
+            makers, and forum contributors I&apos;ve learned from.
           </Footnote>{' '}
           developer. I&apos;ve learned from previous career experience, online
           education resources, and a lot of trial and error. I have also been

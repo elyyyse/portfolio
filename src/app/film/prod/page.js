@@ -14,7 +14,7 @@ export default function FilmProduction() {
     <div className={styles.pageContainer}>
       <h1 className={styles.h1}>Stories about helpful people</h1>
       <h2 className={styles.h2}>
-        A brand storytelling series.{' '}
+        A documentary brand storytelling series.{' '}
         <span className={styles.seriesTitle}>Stories about helpful people</span>{' '}
         won a Shorty Award for Best Branded Series and was awarded Best in
         Episodic at TribecaX
@@ -28,6 +28,7 @@ export default function FilmProduction() {
       </h2>
       <div className={`${styles.videoWrapper} ${styles.helpfulPeeps}`}>
         <Video
+          className={styles.video}
           videoSrc='https://player.vimeo.com/video/714807345?badge=0&amp;autopause=0&amp;quality_selector=1&amp;player_id=0&amp;app_id=58479'
           title='Eric and the Bees'
         />
@@ -50,6 +51,7 @@ export default function FilmProduction() {
 
       <div className={`${styles.videoWrapper} ${styles.helpfulPeeps}`}>
         <Video
+          className={styles.video}
           videoSrc='https://player.vimeo.com/video/714809176?badge=0&amp;autopause=0&amp;quality_selector=1&amp;player_id=0&amp;app_id=58479'
           title='Golden Age Karate'
         />
@@ -89,6 +91,7 @@ export default function FilmProduction() {
 
       <div className={`${styles.videoWrapper} ${styles.productVids}`}>
         <Video
+          className={styles.video}
           videoSrc='https://player.vimeo.com/video/714793396?badge=0&amp;autopause=0&amp;quality_selector=1&amp;player_id=0&amp;app_id=58479'
           title='Zendesk Sales'
         />
@@ -117,6 +120,7 @@ export default function FilmProduction() {
 
       <div className={`${styles.videoWrapper} ${styles.productVids}`}>
         <Video
+          className={styles.video}
           videoSrc='https://player.vimeo.com/video/715447089?badge=0&amp;autopause=0&amp;quality_selector=1&amp;player_id=0&amp;app_id=58479'
           title='Zendesk Gather'
         />

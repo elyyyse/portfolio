@@ -21,8 +21,8 @@ function ProjectGalleryTile({
     ? `${styles.link} ${styles.comingSoon}`
     : `${styles.link}`;
 
-  const thumbnailState =
-    featured || comingSoon ? `${styles.featured}` : `${styles.standard}`;
+  const thumbnailState = featured ? `${styles.featured}` : `${styles.standard}`;
+  // || comingSoon
 
   return (
     <Link
