@@ -42,29 +42,26 @@ export default function Home() {
             >
               &lsquo;A Psalm for the Wild-Built&rsquo; by Becky Chambers
             </Link>
-            . I could also call it &lsquo;self-taught&rsquo;, but that feels
-            insufficient when I consider the countless bloggers, tutorial
-            makers, and forum contributors I&apos;ve learned from.
+            . I could also say I&apos; &lsquo;self-taught&rsquo;, but that feels
+            insufficient when I consider the countless documentation writers,
+            tutorial makers, bloggers, and forum contributors I&apos;ve learned
+            from.
           </Footnote>{' '}
           developer. I&apos;ve learned from previous career experience, online
-          education resources, and a lot of trial and error. I have also been
-          lucky enough to tap into my vast network of incredibly talented and
-          generous colleagues.
+          education resources, and a lot of trial and error. I am also lucky
+          enough to have a vast network of incredibly talented and generous
+          colleagues to tap into.
         </p>
 
         <p className={styles.introParagraph}>
-          In the world of film,{' '}
-          <span className={styles.emphasize}>
-            <strong>representation</strong>
-          </span>{' '}
-          is everything. Sharing stories is a fundamental part of what makes us
+          In the world of media,{' '}
+          <span className={styles.emphasize}>representation</span> is
+          everything. Sharing stories is a fundamental part of what makes us
           human, and it&apos;s imperative that we hear perspectives from as many
           people as possible. The best parallel I&apos;ve found in software is{' '}
-          <span className={styles.emphasize}>
-            <strong>accessibility</strong>
-          </span>
-          . It&apos;s a difficult subject to nail down, but I aim to learn as
-          much I can, so I can make products for as many people as possible.
+          <span className={styles.emphasize}>accessibility</span>. It&apos;s a
+          difficult subject to nail down, but I aim to learn as much I can, so I
+          can make products for as many people as possible.
         </p>
       </div>
       <div className={styles.socialIconLinks}>

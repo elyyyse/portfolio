@@ -26,6 +26,7 @@
 
 .emphasize {
   color: var(--text-emphasis);
+  font-weight: 700;
 }
 
 .h2 {
@@ -44,9 +45,13 @@
   gap: 1.5rem;
 }
 
-.introParagraph {
+.introBody > p {
   flex-basis: 28ch;
 }
+
+/* .introParagraph {
+  flex-basis: 28ch;
+} */
 
 .socialIconLinks {
   margin: 10px auto 0;
