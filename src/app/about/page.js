@@ -20,21 +20,18 @@ export default function About() {
             Bay Area.
           </h1>
           <p>
-            I have spent the past decade+ working across nearly every area of a
-            fast-growing tech company. My role included collaborative
-            partnership and required me to really understand my colleagues&apos;
-            goals and business needs. My move towards frontend development feels
-            less like a transition, and more like a natural evolution as I build
-            upon my experience. And while I&apos;m proud of how much I&apos;ve
-            learned and accomplished on my own, I am ready to join a team that I
-            can learn from and grow with.
+            In my previous career in media, a key focus for me was
+            representation. Sharing stories is a fundamental part of what makes
+            us human. The stories we choose to tell and listen to shape the
+            world around us, and it is imperative that we hear perspectives from
+            as many people as possible. The parallel I&apos;ve found in software
+            is accessibility. It&apos;s a difficult subject to nail down, but I
+            aim to learn as much as I can, so I can make products for as many
+            people as possible.
           </p>
           <p>
-            I am a theatre enthusiast. A rochambeau champion (now retired). A
-            reader, a walker, and a climber.{' '}
-            <Link href='mailto: elyse@hey.com'>
-              I&apos;d love to hear from you.
-            </Link>
+            If you&apos;re interested in building something together,{' '}
+            <Link href='mailto: elyse@hey.com'>let me know.</Link>
           </p>
         </div>
         <div className={styles.imageWrapper}>
@@ -50,60 +47,65 @@ export default function About() {
       <h2 className={styles.h2}>Get to know me in list form</h2>
       <div className={styles.listsContainer}>
         <div className={styles.listWrapper}>
-          <h3 className={styles.listHeader}>
-            Resources that have been invaluable to me
-          </h3>
-          <List role='list'>
-            <li>
-              <Link href='https://www.frontendmentor.io/' target='_blank'>
-                Frontend Mentor
-                <Footnote>
-                  A platform that provides professional designs, so you can
-                  focus on improving your coding. Users can build their apps
-                  using whichever technologies they choose.
-                </Footnote>
-              </Link>
-            </li>
-            <li>
-              <Link href='https://developer.mozilla.org/en-US/' target='_blank'>
-                MDN
-              </Link>
-            </li>
-            <li>
-              <Link
-                href='https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/'
-                target='_blank'
-              >
-                W3 Authoring Practices Guide
-              </Link>
-            </li>
-            <li>
-              <Link href='https://css-tricks.com/' target='_blank'>
-                CSS Tricks
-              </Link>
-            </li>
-          </List>
-        </div>
+          <div className={styles.listWrapper}>
+            <h3 className={styles.listHeader}>
+              Resources that have been invaluable to me
+            </h3>
+            <List role='list'>
+              <li>
+                <Link href='https://www.frontendmentor.io/' target='_blank'>
+                  Frontend Mentor
+                  <Footnote>
+                    A platform that provides professional designs, so you can
+                    focus on improving your coding. Users can build their apps
+                    using whichever technologies they choose.
+                  </Footnote>
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href='https://developer.mozilla.org/en-US/'
+                  target='_blank'
+                >
+                  MDN
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href='https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/'
+                  target='_blank'
+                >
+                  W3 Authoring Practices Guide
+                </Link>
+              </li>
+              <li>
+                <Link href='https://css-tricks.com/' target='_blank'>
+                  CSS Tricks
+                </Link>
+              </li>
+            </List>
+          </div>
 
-        <div className={styles.listWrapper}>
-          <h3 className={styles.listHeader}>
-            Online educators I have a parasocial relationship with
-          </h3>
-          <List role='list'>
-            <li>
-              <Link
-                href='https://www.udemy.com/user/coltsteele/'
-                target='_blank'
-              >
-                Colt Steele
-              </Link>
-            </li>
-            <li>
-              <Link href='https://www.joshwcomeau.com/' target='_blank'>
-                Josh Comeau
-              </Link>
-            </li>
-          </List>
+          <div className={styles.listWrapper}>
+            <h3 className={`${styles.listHeader} ${styles.nestedListHeader}`}>
+              Online educators I have a parasocial relationship with
+            </h3>
+            <List role='list'>
+              <li>
+                <Link
+                  href='https://www.udemy.com/user/coltsteele/'
+                  target='_blank'
+                >
+                  Colt Steele
+                </Link>
+              </li>
+              <li>
+                <Link href='https://www.joshwcomeau.com/' target='_blank'>
+                  Josh Comeau
+                </Link>
+              </li>
+            </List>
+          </div>
         </div>
 
         <div className={styles.listWrapper}>

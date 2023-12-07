@@ -33,29 +33,26 @@ export default function Home() {
       </h1>
       <div className={styles.introBody}>
         <p className={styles.introParagraph}>
+          I have spent the past decade+ working across nearly every area of a
+          fast-growing tech company. My role included collaborative,
+          cross-functional partnership and required me to really understand my
+          colleagues&apos; goals and business needs. Id sunt ex et in et nulla
+          deserunt duis ad occaecat ad qui anim qui deserunt ex commodo amet
+          sunt ex non fugiat aute.
+        </p>
+        <p className={styles.introParagraph}>
           While I&apos;m a formally trained filmmaker, I am a wild-built
           <Footnote>
             This is a reference to an excellent sci-fi novella called &lsquo;A
-            Psalm for the Wild-Built&rsquo; by Becky Chambers. I could also say
-            I&apos;m &lsquo;self-taught&rsquo;, but that feels insufficient when
-            I consider the countless documentation writers, tutorial makers,
-            bloggers, and forum contributors I&apos;ve learned from.
+            Psalm for the Wild-Built&rsquo; by Becky Chambers, in which she
+            describes a &lsquo;wild-built&rsquo; robot who was put together from
+            pieces of the robots who came before it.
           </Footnote>{' '}
           developer. I&apos;ve learned from previous career experience, online
-          education resources, and a lot of trial and error. I am also lucky
-          enough to have a vast network of incredibly talented and generous
-          colleagues to tap into.
-        </p>
-
-        <p className={styles.introParagraph}>
-          In the world of media,{' '}
-          <span className={styles.emphasize}>representation</span> is
-          everything. Sharing stories is a fundamental part of what makes us
-          human, and it&apos;s imperative that we hear perspectives from as many
-          people as possible. The best parallel I&apos;ve found in software is{' '}
-          <span className={styles.emphasize}>accessibility</span>. It&apos;s a
-          difficult subject to nail down, but I aim to learn as much I can, so I
-          can make products for as many people as possible.
+          education resources, and a lot of trial and error. I&apos;m also lucky
+          to have a network of incredibly talented and generous colleagues to
+          tap into. I&apos;m proud of what I have accomplished so far, and I am
+          ready to join a team that I can learn from and grow with.
         </p>
       </div>
       <div className={styles.socialIconLinks}>
