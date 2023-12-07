@@ -21,11 +21,9 @@ export default function TodoApp() {
     <div className={styles.gridWrapper}>
       <h1 className={styles.h1}>Todo App</h1>
       <p className={styles.p}>
-        An app that calculates how old you are to the day. Built using native
-        JavaScript dates objects. I did this in part because I didn&apos;t know
-        what my options were, but I do think there is value in understanding the
-        underlying pain points of a technology before getting comfortable with a
-        tool that papers over it. This app was designed by Frontend Mentor.
+        The illustrious portfolio Todo List. This app utilizes localStorage to
+        save your todos and your light/dark mode preference. Design by Frontend
+        Mentor.
       </p>
       <div className={styles.listsContainer}>
         <div className={styles.listWrapper}>
@@ -69,7 +67,7 @@ export default function TodoApp() {
         priority
         className={`${styles.heroImage} ${styles.breakGrid}`}
         src='/project-page/todo-app/todo-app-hero.png'
-        alt=''
+        alt='Todo app with 4 todos in light mode'
         width={1440}
         height={810}
       />
@@ -91,13 +89,14 @@ export default function TodoApp() {
           </Footnote>
         </li>
         <li>
-          Each time a todo is added, deleted, marked complete, or reordered the
+          Each time a todo is added, deleted, marked complete, or reordered, the
           todos array is updated<Footnote>As well as localStorage</Footnote>,
           and the todo list is redrawn based on the filter state
         </li>
         <li>
           The content &lt;template&gt; element works like a reusable component
-          and includes all of the syntax needed to house a todo in the list
+          and includes all of the syntax and styles needed to house a todo in
+          the list
         </li>
       </List>
       <h2 className={styles.h2}>Helpful resources</h2>
@@ -123,22 +122,23 @@ export default function TodoApp() {
       <h2 className={styles.h2}>Challenges and lessons learned</h2>
       <p className={styles.p}>
         One of the more challenging parts of this project was implementing drag
-        and drop reordering and ensuring the new order is accurately captured in
-        state and redrawn correctly on refresh (again, something React*Props
-        could have helped me with). Since this was my first time attempting it,
-        I opted not to use a library and to build it from scratch instead
+        and drop reordering&#8212;ensuring the new order is accurately captured
+        in state, and the list is redrawn correctly on refresh (again, something
+        React could have helped me with). Since this was my first time
+        attempting drag and drop, I opted to build it from scratch
         <Footnote>
           Incidentally, this feature is only available on web and doesn&apos;t
           yet work for mobile touch events.
         </Footnote>
-        . (understand what&apos;s under the hood)
+        . But now that I understand the underlying mechanics, I would likely
+        take advantage of a library for future projects.
       </p>
       <p className={styles.pContinued}>
         The most difficult snag I hit was trying to meet the design spec while
         still achieving accessibility standards. In some cases, I just had to
         change the design a bit (strictly speaking, the design asked me to
         remove any focus outline from the new todo text input). But in other
-        cases, I learned some neat practices - like{' '}
+        cases, I learned some neat practices&#8212;like{' '}
         <Link
           href='https://github.com/elyyyse/til/blob/main/css/hide-radio-buttons-accessibly.css'
           target='_blank'
@@ -154,47 +154,32 @@ export default function TodoApp() {
         </Link>
         , but still keep them focusable for keyboard users.
       </p>
-      <p className={styles.pContinued}>
-        Some of the design challenges were fun - like figuring out how to have a
-        gradient border with 50% border radius (
-        <Link
-          href='https://www.youtube.com/watch?app=desktop&v=RM3-IMRIEB4'
-          target='_blank'
-        >
-          surprisingly tricky!
-        </Link>
-        )
-      </p>
       <div className={`${styles.slideshow}  ${styles.breakGrid}`}>
         <Image
-          // className={`${styles.slideshowImage} ${styles.breakGrid}`}
           className={styles.slideshowImage}
           src='/project-page/todo-app/todo-app-drag-light.png'
-          alt=''
+          alt='Todo list showing drag and drop reordering'
           width={1440}
           height={810}
         />
         <Image
-          // className={`${styles.slideshowImage} ${styles.breakGrid}`}
           className={styles.slideshowImage}
           src='/project-page/todo-app/todo-app-mobile-dark.png'
-          alt=''
+          alt='Todo app mobile view in dark mode'
           width={500}
           height={750}
         />
         <Image
-          // className={`${styles.slideshowImage} ${styles.breakGrid}`}
           className={styles.slideshowImage}
           src='/project-page/todo-app/todo-app-dark.png'
-          alt=''
+          alt=' Todo app showing hover state in dark mode'
           width={1440}
           height={810}
         />
         <Image
-          // className={`${styles.slideshowImage} ${styles.breakGrid}`}
           className={styles.slideshowImage}
           src='/project-page/todo-app/todo-app-mobile-light.png'
-          alt=''
+          alt='Todo app mobile view in light mode'
           width={500}
           height={750}
         />

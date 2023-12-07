@@ -73,7 +73,7 @@ export default function AgeCalc() {
         priority
         className={`${styles.heroImage} ${styles.breakGrid}`}
         src='/project-page/age-calc/age-calc-hero.png'
-        alt="Age calculator app showing the age of someone born April 7, 2015'"
+        alt='Age calculator app showing the age of someone born April 7, 2015'
         width={1440}
         height={810}
       />
@@ -147,40 +147,34 @@ export default function AgeCalc() {
         height={810}
       /> */}
         <Image
-          // className={`${styles.slideshowImage} ${styles.breakGrid}`}
           className={styles.slideshowImage}
           src='/project-page/age-calc/age-calc-leap-error.png'
-          alt=''
+          alt="Age calculator app showing an error for a date that doesn't exist"
           width={1440}
           height={810}
         />
         <Image
-          // className={`${styles.slideshowImage} ${styles.breakGrid}`}
           className={styles.slideshowImage}
           src='/project-page/age-calc/age-calc-mobile-leap.png'
-          alt=''
+          alt='Age calculator mobile view showing the age of someone born February 29, 1996'
           width={500}
           height={750}
         />
         <Image
-          // className={`${styles.slideshowImage} ${styles.breakGrid}`}
           className={styles.slideshowImage}
           src='/project-page/age-calc/animated-numbers.gif'
-          alt=''
+          alt='Animated age calculator showing the age of someone born December 25, 1982'
           width={1440}
           height={810}
         />
         <Image
-          // className={`${styles.slideshowImage} ${styles.breakGrid}`}
           className={styles.slideshowImage}
           src='/project-page/age-calc/age-calc-mobile-single.png'
-          alt=''
+          alt='Age calculator showing an age including single digits'
           width={500}
           height={750}
         />
-
         {/* <Image
-          // className={`${styles.slideshowImage} ${styles.breakGrid}`}
           className={styles.slideshowImage}
           src='/project-page/age-calc/age-calc-future-error.png'
           alt=''

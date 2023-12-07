@@ -5,7 +5,8 @@
 
 .asterisk {
   font-size: 1.25rem;
-  color: #ae2012;
+  line-height: 1;
+  color: #c4362c;
   font-weight: 600;
 }
 
@@ -15,6 +16,7 @@
   padding: 12px;
   border-radius: 5px;
   background-color: var(--accent-color);
+  /* background-color: #2b2d42; */
   transform-origin: var(--radix-tooltip-content-transform-origin);
   animation: slideOut 0.2s ease-out;
 }
