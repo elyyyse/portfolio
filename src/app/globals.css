@@ -51,10 +51,9 @@ html {
   --icon-links: #463f3a;
   --bg-color: #f7f7f7;
 }
-body {
+/* body {
   height: 100svh;
-  /* position: relative; */
-}
+} */
 
 a,
 a:visited {

@@ -1,7 +1,9 @@
 .navigationList {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 40px 24px 40px calc(24px - 17px);
+  /* max-width: 1000px;
+  margin: 0 auto; */
+  /* padding: 40px 24px 40px calc(24px - 17px); */
+  width: 100%;
+  padding: 40px 5%;
   list-style-type: none;
   line-height: 1;
   display: flex;
@@ -11,21 +13,23 @@
 }
 
 .navigationList li:not(:first-of-type) {
-  flex-basis: 50px;
+  flex-basis: 40px;
+}
+
+.chevronDown {
+  display: none;
 }
 
 @media (min-width: 900px) {
   .navigationList {
+    padding: 40px 10%;
     gap: 2rem;
   }
-  /* .navigationList li:not(:first-of-type) {
+  .navigationList li:not(:first-of-type) {
     flex-basis: 50px;
-  } */
-}
-
-@media (min-width: 1100px) {
-  .navigationList {
-    padding: 40px 0 40px 0;
+  }
+  .chevronDown {
+    display: unset;
   }
 }
 

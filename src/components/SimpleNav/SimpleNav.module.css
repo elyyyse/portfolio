@@ -1,0 +1,9 @@
+.simpleNav li a {
+  text-decoration: none;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .simpleNav li a:hover {
+    text-decoration: underline;
+  }
+}
