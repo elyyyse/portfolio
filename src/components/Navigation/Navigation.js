@@ -28,6 +28,8 @@ function Navigation() {
     console.info('✉️ elyse@hey.com');
   }, []);
 
+  const [isOpen, setIsOpen] = React.useState(false);
+
   const shouldReduceMotion = useReducedMotion();
   const logo = {
     hidden: {
@@ -138,7 +140,7 @@ function Navigation() {
             film
             <ChevronDown className={styles.chevronDown} size={16} aria-hidden />
           </NavigationMenu.Trigger>
-          <span>
+          <span className={styles.filmSvg}>
             {pathname.startsWith('/film') && (
               <motion.svg
                 width='52'
@@ -148,7 +150,6 @@ function Navigation() {
                 xmlns='http://www.w3.org/2000/svg'
               >
                 <motion.path
-                  className={styles.filmSvg}
                   d='M2 3C12.2593 3 22.5185 3 32.7778 3C35.9055 3 48.7367 4.52668 50 2'
                   stroke='#005F73'
                   strokeWidth='3'
@@ -196,7 +197,7 @@ function Navigation() {
             // }
           >
             about
-            {pathname === '/about' && (
+            {/* {pathname === '/about' && (
               <motion.svg
                 width='51'
                 height='11'
@@ -207,6 +208,25 @@ function Navigation() {
                 <motion.path
                   className={styles.aboutSvg}
                   d='M2 9C8.47351 9 13.5679 3 20.5 3C24.8866 3 47.2589 5.48218 49 2'
+                  stroke='#005F73'
+                  strokeWidth='3'
+                  strokeLinecap='round'
+                  variants={underlines}
+                  initial='hidden'
+                  animate='visible'
+                />
+              </motion.svg>
+            )} */}
+            {pathname === '/about' && (
+              <motion.svg
+                width='53'
+                height='9'
+                viewBox='0 0 53 9'
+                fill='none'
+                xmlns='http://www.w3.org/2000/svg'
+              >
+                <motion.path
+                  d='M2.75576 6.34256C9.18844 7.06853 14.9236 1.67768 21.8119 2.45507C26.1708 2.947 48.1237 7.92244 50.2443 4.65748'
                   stroke='#005F73'
                   strokeWidth='3'
                   strokeLinecap='round'

@@ -35,17 +35,11 @@ export default function Home() {
         <p className={styles.introParagraph}>
           While I&apos;m a formally trained filmmaker, I am a wild-built
           <Footnote>
-            This is a reference to an excellent sci-fi novella called{' '}
-            <Link
-              href='https://www.goodreads.com/book/show/40864002-a-psalm-for-the-wild-built'
-              target='_blank'
-            >
-              &lsquo;A Psalm for the Wild-Built&rsquo; by Becky Chambers
-            </Link>
-            . I could also say I&apos;m &lsquo;self-taught&rsquo;, but that
-            feels insufficient when I consider the countless documentation
-            writers, tutorial makers, bloggers, and forum contributors I&apos;ve
-            learned from.
+            This is a reference to an excellent sci-fi novella called &lsquo;A
+            Psalm for the Wild-Built&rsquo; by Becky Chambers. I could also say
+            I&apos;m &lsquo;self-taught&rsquo;, but that feels insufficient when
+            I consider the countless documentation writers, tutorial makers,
+            bloggers, and forum contributors I&apos;ve learned from.
           </Footnote>{' '}
           developer. I&apos;ve learned from previous career experience, online
           education resources, and a lot of trial and error. I am also lucky

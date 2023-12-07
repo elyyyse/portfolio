@@ -22,12 +22,11 @@ export default function AgeCalc() {
     <div className={styles.gridWrapper}>
       <h1 className={styles.h1}>Age Calculator</h1>
       <p className={styles.p}>
-        You give it a birthday, and it tells you how old the user is to the day.
-        Made without a DateTime Library of any kind. I didn&apos;t use a
-        date/time library because I like to understand the underlying difficulty
-        before getting comfortable with a tool that papers over it. But
-        honestly, a library would have just made the formatting easier to
-        digest. Design by Frontend Mentor.
+        An app that calculates how old you are to the day. Built using native
+        JavaScript dates objects. I did this in part because I didn&apos;t know
+        what my options were, but I do think there is value in understanding the
+        underlying pain points of a technology before getting comfortable with a
+        tool that papers over it. This app was designed by Frontend Mentor.
       </p>
       <div className={styles.listsContainer}>
         <div className={styles.listWrapper}>
@@ -89,16 +88,20 @@ export default function AgeCalc() {
         birth is a smaller number than today&apos;s date. And don&apos;t even
         get me started on leap years.
       </p>
-      <p className={styles.p}>
+      <p className={styles.pContinued}>
         Once the basic logic was up and running, there were several fiddly
-        little details to work through. Like custom error states if any single
-        input was invalid, but also if their combined value created an invalid
-        date (like April 31st or a date in the future). And making sure the
-        words ‘years, months, days’ update to the singular form if their
-        respective output number is 1.
+        little details to work through. Like custom error states
+        <Footnote>
+          I used aria-errormessage and aria-invalid to keep these custom
+          messages accessible.
+        </Footnote>{' '}
+        if any single input was invalid, but also if their combined value
+        created an invalid date (like April 31st or a date in the future). Or
+        making sure the words &lsquo;years, months, days&rsquo; update to the
+        singular form if their respective output number is 1.
       </p>
       <h2 className={styles.h2}>Helpful resources</h2>
-      <List className={styles.resources}>
+      <List className={styles.bodyList}>
         <li>
           <Link
             href='https://www.digitalocean.com/community/tutorials/understanding-date-and-time-in-javascript'
@@ -110,10 +113,28 @@ export default function AgeCalc() {
       </List>
       <h2 className={styles.h2}>Challenges and lessons learned</h2>
       <p className={styles.p}>
-        This is one of the first projects I made, and at the time, I was a bit
-        puzzled by the CSS position property&#8212;specifically absolute and
-        relative. Building this helped me to grok the concept and also marked a
-        pivotal confidence boost as I continued pursuing software development.💛
+        I&apos;m someone who values organization and legibility, and that
+        absolutely extends to my code. This project was a bit of a trial in that
+        regard and gave me a real appreciation for refactoring. I found myself
+        going back over my code again and again to name or rename variables, to
+        collect repetitive logic into reusable functions, and to leave clear
+        comments when I felt my naming wasn&apos;t quite enough info.
+      </p>
+      <p className={styles.pContinued}>
+        When I built this app, I was flummoxed by the concept of epoch time and
+        UTC and just kind of ignored it in favor of date formats that made more
+        sense to me. In hindsight, I think I could have simplified things had a
+        taken advantage of UTC. It&apos;s something I might attempt in the
+        future.
+      </p>
+      <p className={styles.pContinued}>
+        My biggest challenge by far was figuring out the leap year math. The
+        issues kept popping up like a game of whack-a-mole. It wasn&apos;t too
+        difficult to get things working for 2023, but it was obvious that come
+        March 2024, my calculations were going to be off by a day. When I
+        finally took to pen and paper to sketch out the problem, I was able to
+        find solutions that, as of this writing, I haven&apos;t been able break.
+        🤞🏽
       </p>
       <div className={`${styles.slideshow}  ${styles.breakGrid}`}>
         {/* <PlayableGif

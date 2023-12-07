@@ -16,15 +16,17 @@
   border-radius: 5px;
   background-color: var(--accent-color);
   transform-origin: var(--radix-tooltip-content-transform-origin);
-  animation: slideOut 0.1s ease-out;
+  animation: slideOut 0.2s ease-out;
 }
 
 @keyframes slideOut {
   from {
-    transform: translateY(10%);
+    transform: translateY(-10%);
+    opacity: 0;
   }
   to {
     transform: translateY(0);
+    opacity: 1;
   }
 }
 

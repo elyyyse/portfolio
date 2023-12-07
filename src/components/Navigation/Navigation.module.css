@@ -11,16 +11,16 @@
 }
 
 .navigationList li:not(:first-of-type) {
-  flex-basis: 40px;
+  flex-basis: 50px;
 }
 
 @media (min-width: 900px) {
   .navigationList {
     gap: 2rem;
   }
-  .navigationList li:not(:first-of-type) {
+  /* .navigationList li:not(:first-of-type) {
     flex-basis: 50px;
-  }
+  } */
 }
 
 @media (min-width: 1100px) {
@@ -101,7 +101,7 @@
   .chevronDown {
     transform: rotate(-180deg);
   }
-  .filmSvg {
+  ~ .filmSvg {
     display: none;
   }
 }
