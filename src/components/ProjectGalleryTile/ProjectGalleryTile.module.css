@@ -1,0 +1,82 @@
+.link,
+.link:visited {
+  color: #000;
+  text-decoration: none;
+}
+
+.wideThumbnail {
+  display: none;
+}
+
+.featured,
+.standard {
+  flex-basis: 325px;
+  height: auto;
+}
+
+.featured img,
+.standard img,
+.featured .textWrapper,
+.standard .textWrapper {
+  width: 300px;
+  height: auto;
+}
+
+@media (min-width: 716px) {
+  .wideThumbnail {
+    display: unset;
+  }
+  .featured > .regThumbnail {
+    display: none;
+  }
+  .featured {
+    flex-basis: 650px;
+  }
+  .featured img {
+    width: 650px;
+  }
+  .featured > .textWrapper > * {
+    width: 450px;
+  }
+}
+
+.textWrapper {
+  padding: 10px 5px 0 5px;
+}
+
+.projectTitle {
+  font-size: 1rem;
+}
+
+.projectBlurb {
+  font-size: 0.8rem;
+  margin-top: 0.625rem;
+}
+
+.cta {
+  margin-top: 0.625rem;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  text-decoration: underline 0.15em rgba(0, 0, 0, 0);
+  text-underline-offset: 0.5em;
+  transition: text-decoration-color 300ms;
+}
+
+.comingSoon {
+  cursor: default;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .link:hover:not(.comingSoon) {
+    .cta {
+      text-decoration-color: rgba(0, 0, 0, 1);
+    }
+    transition: all 0.2s ease-in-out;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .link:hover:not(.comingSoon) {
+      transform: scale(1.02) translateY(-1%);
+    }
+  }
+}

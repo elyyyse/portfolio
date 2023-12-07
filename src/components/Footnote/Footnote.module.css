@@ -1,0 +1,41 @@
+.button {
+  background: none;
+  border: none;
+}
+
+.asterisk {
+  font-size: 1.25rem;
+  color: #ae2012;
+  font-weight: 600;
+}
+
+.popover {
+  width: 25ch;
+  height: auto;
+  padding: 12px;
+  border-radius: 5px;
+  background-color: var(--accent-color);
+  transform-origin: var(--radix-tooltip-content-transform-origin);
+  animation: slideOut 0.1s ease-out;
+}
+
+@keyframes slideOut {
+  from {
+    transform: translateY(10%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.popover,
+.popover a,
+.popover a:visited {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #fff;
+}
+
+.popoverArrow {
+  fill: var(--accent-color);
+}

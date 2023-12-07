@@ -1,0 +1,20 @@
+.iframe {
+  border: none;
+}
+
+/* .video {
+  padding: 50% 0 0 0;
+} */
+
+@media (min-width: 700px) {
+  .video {
+    flex-basis: 50%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .video {
+    flex-basis: 60%;
+    /* padding: 10% 0 10% 0; */
+  }
+}

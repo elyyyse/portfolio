@@ -1,0 +1,119 @@
+.flexWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.h1 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.heroContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.imageWrapper {
+  align-self: center;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+.photoCred {
+  font-size: 0.625rem;
+  align-self: flex-end;
+}
+
+.textWrapper {
+  width: 80%;
+  align-self: center;
+}
+
+.textWrapper > p {
+  padding: 0.625rem 0;
+}
+
+.textWrapper > p:last-of-type {
+  padding-bottom: 0;
+}
+
+.h2 {
+  font-size: 1.5rem;
+  margin-top: 4rem;
+  width: 80%;
+  align-self: center;
+}
+
+.listsContainer {
+  width: 80%;
+  margin: 2rem auto;
+  line-height: 1.75;
+  display: flex;
+  justify-content: flex-start;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.listHeader {
+  font-size: 1rem;
+}
+
+.listWrapper {
+  flex-basis: 20%;
+  min-width: 10ch;
+}
+
+.listWrapper li,
+.listWrapper a,
+.listWrapper a:visited {
+  font-size: 1rem;
+  padding: 0.3rem 0;
+  text-transform: uppercase;
+  color: #000;
+  text-decoration: none;
+}
+
+.listWrapper a:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.2rem;
+}
+
+@media (min-width: 650px) {
+  .heroContainer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    background: url('/about-portrait.png') no-repeat center;
+    background-size: 100%;
+    min-height: 600px;
+  }
+
+  .textWrapper {
+    width: 45%;
+    max-width: 65ch;
+
+    /* styles for legibility when text intersects bg image */
+    margin-left: 4rem;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+
+    font-weight: 700;
+  }
+
+  .imageWrapper {
+    display: none;
+  }
+}
+
+/* TODO: adjust based on final copy length */
+@media (min-width: 1100px) {
+  .textWrapper {
+    width: 50%;
+    margin-left: unset;
+    padding: 0 0 0 5rem;
+    background-color: transparent;
+
+    /* font-weight: 700; */
+  }
+}

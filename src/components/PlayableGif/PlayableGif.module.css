@@ -1,0 +1,35 @@
+/* .wrapper { */
+/* grid-column: 1 / -1; */
+/* justify-self: center; */
+/* } */
+.regImg,
+.wideImg {
+  border: 2px solid var(--accent-color);
+}
+
+/* .regImg {
+  width: 300px;
+  height: auto;
+} */
+
+.wideImg {
+  width: 650px;
+  height: auto;
+}
+
+.button {
+  border: none;
+  background: none;
+  color: #000;
+  position: relative;
+}
+
+.playBtn {
+  background-color: var(--bg-color);
+  padding: 10px;
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

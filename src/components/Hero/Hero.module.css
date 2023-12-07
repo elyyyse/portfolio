@@ -1,0 +1,9 @@
+.canvas {
+  z-index: -1;
+}
+
+/* @media (hover: hover) and (pointer: fine) {
+  .canvas {
+    display: none;
+  }
+} */

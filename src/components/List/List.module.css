@@ -1,0 +1,19 @@
+.list {
+  list-style-type: none;
+  font-size: 0.9rem;
+}
+
+/* .bullets::before {
+  content: '';
+  display: inline-block;
+  width: 1rem;
+  height: 0.5rem;
+  padding-right: 2rem;
+  stroke-width: 1;
+  background: url('/arrow-right.svg') no-repeat;
+  background-position: left center;
+} */
+
+/* .listItem::after {
+  content: ' • ';
+} */
