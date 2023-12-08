@@ -130,11 +130,13 @@ export default function Home() {
               strokeWidth={1.5}
               // style={{ display: 'inline' }}
             />
-            <span>Framer Motion</span>
-            <Footnote>
-              For the logo animation. Otherwise, I used basic CSS transforms,
-              transitions, and keyframes.
-            </Footnote>
+            <span>
+              Framer Motion
+              <Footnote>
+                For the logo animation. Otherwise, I used basic CSS transforms,
+                transitions, and keyframes.
+              </Footnote>
+            </span>
           </li>
 
           <li className={styles.listItem}>
@@ -153,10 +155,12 @@ export default function Home() {
               strokeWidth={1.5}
               // style={{ display: 'inline' }}
             />
-            <span>Radix UI</span>
-            <Footnote class={styles.footnote}>
-              For accessible extras like this popover
-            </Footnote>
+            <span>
+              Radix UI
+              <Footnote class={styles.footnote}>
+                For accessible extras like this popover
+              </Footnote>
+            </span>
           </li>
         </div>
       </List>

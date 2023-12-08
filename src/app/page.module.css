@@ -97,14 +97,8 @@
   display: inline;
 }
 
-@media (max-width: 395px) {
+/* @media (max-width: 395px) {
   .listIcon {
     display: none;
   }
-  .listItem {
-    gap: 0;
-  }
-  .listItem span {
-    flex-basis: 50%;
-  }
-}
+} */

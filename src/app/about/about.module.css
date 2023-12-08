@@ -49,7 +49,7 @@
 .listsContainer {
   width: 80%;
   margin: 2rem auto;
-  line-height: 1.75;
+  line-height: 1.5;
   display: flex;
   justify-content: flex-start;
   gap: 3rem;
@@ -57,23 +57,26 @@
 }
 
 .listHeader {
-  font-size: 1rem;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
 }
 .nestedListHeader {
   margin-top: 3rem;
+  /* text-transform: uppercase; */
 }
 
 .listWrapper {
-  flex-basis: 20%;
   min-width: 10ch;
+  flex-basis: 20%;
 }
 
 .listWrapper li,
 .listWrapper a,
 .listWrapper a:visited {
-  font-size: 1rem;
-  padding: 0.3rem 0;
-  text-transform: uppercase;
+  /* font-size: 0.9rem; */
+  padding: 0.35rem 0;
+  /* text-transform: uppercase; */
   color: #000;
   text-decoration: none;
 }
@@ -118,5 +121,9 @@
     background-color: transparent;
 
     /* font-weight: 700; */
+  }
+
+  .listsContainer {
+    gap: 4rem;
   }
 }
