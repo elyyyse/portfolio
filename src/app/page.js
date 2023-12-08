@@ -94,75 +94,73 @@ export default function Home() {
       <h2 className={`${styles.h2} ${styles.listHeader}`}>
         This portfolio site is built with:
       </h2>
-      <List role='list'>
-        <div className={styles.listWrapper}>
-          <li className={styles.listItem}>
-            <SquareDashedBottomCode
-              className={styles.listIcon}
-              size={16}
-              strokeWidth={1.5}
-              // style={{ display: 'inline' }}
-            />
-            <span>React</span>
-          </li>
-          <li className={styles.listItem}>
-            <FileJson2
-              className={styles.listIcon}
-              size={16}
-              strokeWidth={1.5}
-              // style={{ display: 'inline' }}
-            />
-            <span>Next.js</span>
-          </li>
-          <li className={styles.listItem}>
-            <Braces
-              className={styles.listIcon}
-              size={16}
-              strokeWidth={1.5}
-              // style={{ display: 'inline' }}
-            />
-            CSS Modules
-          </li>
-          <li className={styles.listItem}>
-            <Framer
-              className={styles.listIcon}
-              size={16}
-              strokeWidth={1.5}
-              // style={{ display: 'inline' }}
-            />
-            <span>
-              Framer Motion
-              <Footnote>
-                For the logo animation. Otherwise, I used basic CSS transforms,
-                transitions, and keyframes.
-              </Footnote>
-            </span>
-          </li>
+      <List className={styles.listWrapper}>
+        <li className={styles.listItem}>
+          <SquareDashedBottomCode
+            className={styles.listIcon}
+            size={16}
+            strokeWidth={1.5}
+            // style={{ display: 'inline' }}
+          />
+          <span>React</span>
+        </li>
+        <li className={styles.listItem}>
+          <FileJson2
+            className={styles.listIcon}
+            size={16}
+            strokeWidth={1.5}
+            // style={{ display: 'inline' }}
+          />
+          <span>Next.js</span>
+        </li>
+        <li className={styles.listItem}>
+          <Braces
+            className={styles.listIcon}
+            size={16}
+            strokeWidth={1.5}
+            // style={{ display: 'inline' }}
+          />
+          CSS Modules
+        </li>
+        <li className={styles.listItem}>
+          <Framer
+            className={styles.listIcon}
+            size={16}
+            strokeWidth={1.5}
+            // style={{ display: 'inline' }}
+          />
+          <span>
+            Framer Motion
+            <Footnote>
+              For the logo animation. Otherwise, I used basic CSS transforms,
+              transitions, and keyframes.
+            </Footnote>
+          </span>
+        </li>
 
-          <li className={styles.listItem}>
-            <Paintbrush2
-              className={styles.listIcon}
-              size={16}
-              strokeWidth={1.5}
-              // style={{ display: 'inline' }}
-            />
-            <span>HTML Canvas</span>
-          </li>
-          <li className={styles.listItem}>
-            <PocketKnife
-              className={styles.listIcon}
-              size={16}
-              strokeWidth={1.5}
-              // style={{ display: 'inline' }}
-            />
-            <span>
-              Radix UI
-              <Footnote class={styles.footnote}>
-                For accessible extras like this popover
-              </Footnote>
-            </span>
-          </li>
-        </div>
+        <li className={styles.listItem}>
+          <Paintbrush2
+            className={styles.listIcon}
+            size={16}
+            strokeWidth={1.5}
+            // style={{ display: 'inline' }}
+          />
+          <span>HTML Canvas</span>
+        </li>
+        <li className={styles.listItem}>
+          <PocketKnife
+            className={styles.listIcon}
+            size={16}
+            strokeWidth={1.5}
+            // style={{ display: 'inline' }}
+          />
+          <span>
+            Radix UI
+            <Footnote class={styles.footnote}>
+              For accessible extras like this popover
+            </Footnote>
+          </span>
+        </li>
       </List>
     </main>
   );

@@ -85,7 +85,9 @@ function Navigation() {
               viewBox='0 0 998 354'
               fill='none'
               xmlns='http://www.w3.org/2000/svg'
+              aria-labelledby='homeLink'
             >
+              <title id='homeLink'>Home</title>
               <motion.path
                 fillRule='evenodd'
                 clipRule='evenodd'

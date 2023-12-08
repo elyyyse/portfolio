@@ -53,7 +53,7 @@ export default function About() {
             <h3 className={styles.listHeader}>
               Resources that have been invaluable to me
             </h3>
-            <List role='list'>
+            <List>
               <li>
                 <Link
                   href='https://www.frontendmentor.io/'
@@ -102,7 +102,7 @@ export default function About() {
             <h3 className={`${styles.listHeader} ${styles.nestedListHeader}`}>
               Online educators I have a parasocial relationship with
             </h3>
-            <List role='list'>
+            <List>
               <li>
                 <Link
                   href='https://www.udemy.com/user/coltsteele/'
@@ -129,7 +129,7 @@ export default function About() {
           <h3 className={styles.listHeader}>
             Things I learned on a creative design team
           </h3>
-          <List role='list'>
+          <List>
             <li>Incredible attention to detail</li>
             <li>How to receive and give effective feedback</li>
             <li>
@@ -142,7 +142,7 @@ export default function About() {
 
         <div className={styles.listWrapper}>
           <h3 className={styles.listHeader}>Some of my favorite books</h3>
-          <List role='list'>
+          <List>
             <li>Ego Is the Enemy - Ryan Holiday</li>
             <li>A Field Guide to Getting Lost - Rebecca Solnit</li>
             <li>A Secret History - Donna Tartt</li>
@@ -152,7 +152,7 @@ export default function About() {
           <h3 className={styles.listHeader}>
             Some of my favorite memories from 2023
           </h3>
-          <List role='list'>
+          <List>
             <li>Backpacking the Lost Coast</li>
             <li>Climbing at Smith Rock</li>
             <li>Spending a weekend in Edinburgh</li>
