@@ -34,11 +34,11 @@ export default function Home() {
       <div className={styles.introBody}>
         <p className={styles.introParagraph}>
           I have spent the past decade+ working across nearly every area of a
-          fast-growing tech company. My role included collaborative,
-          cross-functional partnership and required me to really understand my
-          colleagues&apos; goals and business needs. Id sunt ex et in et nulla
-          deserunt duis ad occaecat ad qui anim qui deserunt ex commodo amet
-          sunt ex non fugiat aute.
+          fast-growing tech company. My roles included collaborative,
+          cross-functional partnership and required me to deeply understand my
+          colleagues&apos; goals and business needs. I look forward to bringing
+          this experience and ethos of design thinking to the discipline of
+          development.
         </p>
         <p className={styles.introParagraph}>
           While I&apos;m a formally trained filmmaker, I am a wild-built

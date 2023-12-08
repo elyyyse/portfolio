@@ -31,7 +31,9 @@ export default function About() {
           </p>
           <p>
             If you&apos;re interested in building something together,{' '}
-            <Link href='mailto: elyse@hey.com'>let me know.</Link>
+            <Link href='mailto: elyse@hey.com'>
+              I&apos;d love to hear from you.
+            </Link>
           </p>
         </div>
         <div className={styles.imageWrapper}>
@@ -53,7 +55,11 @@ export default function About() {
             </h3>
             <List role='list'>
               <li>
-                <Link href='https://www.frontendmentor.io/' target='_blank'>
+                <Link
+                  href='https://www.frontendmentor.io/'
+                  target='_blank'
+                  prefetch={false}
+                >
                   Frontend Mentor
                   <Footnote>
                     A platform that provides professional designs, so you can
@@ -66,6 +72,7 @@ export default function About() {
                 <Link
                   href='https://developer.mozilla.org/en-US/'
                   target='_blank'
+                  prefetch={false}
                 >
                   MDN
                 </Link>
@@ -74,12 +81,17 @@ export default function About() {
                 <Link
                   href='https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/'
                   target='_blank'
+                  prefetch={false}
                 >
                   W3 Authoring Practices Guide
                 </Link>
               </li>
               <li>
-                <Link href='https://css-tricks.com/' target='_blank'>
+                <Link
+                  href='https://css-tricks.com/'
+                  target='_blank'
+                  prefetch={false}
+                >
                   CSS Tricks
                 </Link>
               </li>
@@ -95,12 +107,17 @@ export default function About() {
                 <Link
                   href='https://www.udemy.com/user/coltsteele/'
                   target='_blank'
+                  prefetch={false}
                 >
                   Colt Steele
                 </Link>
               </li>
               <li>
-                <Link href='https://www.joshwcomeau.com/' target='_blank'>
+                <Link
+                  href='https://www.joshwcomeau.com/'
+                  target='_blank'
+                  prefetch={false}
+                >
                   Josh Comeau
                 </Link>
               </li>
@@ -145,6 +162,7 @@ export default function About() {
               <Link
                 href='https://www.nytimes.com/2023/03/01/theater/the-lonely-few-lauren-patten.html'
                 target='_blank'
+                prefetch={false}
               >
                 The Lonely Few
               </Link>{' '}

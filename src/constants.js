@@ -62,9 +62,9 @@ export const PROJECT_DETAILS = {
       priority: false,
     },
     {
-      title: 'Coming Soon',
+      title: 'Tell Me More',
       blurb:
-        "I'm in the process of cooking up my next project, but until then, here's a picture of a puppy in a box.",
+        "My next project is an app to submit, comment on, and upvote product feedback, but until it's ready, here's a picture of a puppy in a box.",
       cta: null,
       images: {
         wide: '',

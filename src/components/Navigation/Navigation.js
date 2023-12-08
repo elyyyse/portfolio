@@ -14,18 +14,25 @@ import styles from './Navigation.module.css';
 
 const anon = localFont({
   src: './anonymouspro/AnonymousPro-Regular.ttf',
+  display: 'swap',
 });
 
 function Navigation() {
   React.useEffect(() => {
-    console.info('Oh hi. ʕ•ᴥ•ʔ Here to dig a little deeper?');
-    console.info(
-      'I like that about you. Have a look around, and please let me know'
-    );
-    console.info(
-      'if you have any questions or see opportunities for improvement.'
-    );
-    console.info('✉️ elyse@hey.com');
+    const consoleTimeout = window.setTimeout(() => {
+      console.info('Oh hi. ʕ•ᴥ•ʔ Here to dig a little deeper?');
+      console.info(
+        'I like that about you. Have a look around, and please let me know'
+      );
+      console.info(
+        'if you have any questions or see opportunities for improvement.'
+      );
+      console.info('✉️ elyse@hey.com');
+    }, 5000);
+
+    return () => {
+      window.clearTimeout(consoleTimeout);
+    };
   }, []);
 
   const [isOpen, setIsOpen] = React.useState(false);
