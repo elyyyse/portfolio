@@ -39,7 +39,7 @@ function draw(
     x: mousePosition.x - canvasBox.left,
     y: mousePosition.y - canvasBox.top,
   };
-  prevMousePositions.push(relativeMousePos);
+  if (relativeMousePos.y < 395) prevMousePositions.push(relativeMousePos);
 
   ctx.clearRect(0, 0, width, height);
 
