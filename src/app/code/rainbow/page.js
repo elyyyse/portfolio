@@ -160,10 +160,9 @@ export default function RainbowCanvas() {
       />
       <ol className={`${styles.ol} ${styles.bottomOl}`} start={3}>
         <li>
-          And here comes the fun part&#8212;next you need to calculate the
-          distance from the center of each dot to your cursor using the
-          🤗Pythagorean Theorem🤗. And that allows you to only affect dots that
-          are a particular distance from the mouse.
+          Next you need to calculate the distance from the center of each dot to
+          your cursor using the 🤗Pythagorean Theorem🤗. And that allows you to
+          only affect dots that are a particular distance from the mouse.
         </li>
       </ol>
       <PlayableGif

@@ -90,7 +90,7 @@
   .heroContainer {
     flex-direction: row;
     flex-wrap: wrap;
-    background: url('/about-portrait.png') no-repeat center;
+    background: url('/about-portrait-with-cred.png') no-repeat center;
     background-size: 100%;
     min-height: 600px;
   }

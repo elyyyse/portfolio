@@ -27,8 +27,8 @@ export default function Home() {
       <Hero className={styles.canvas}></Hero>
       <h1 className={styles.introHeading}>
         Hello there, I&apos;m <span className={styles.emphasize}>Elyse</span>
-        —a frontend developer who made a mid-career transition from filmmaking
-        and creative brand design. But more than that, I am a{' '}
+        —a frontend developer who made a mid-career transition from film and
+        creative brand design. But more than that, I am a{' '}
         <span className={styles.emphasize}>lifelong learner</span>.
       </h1>
       <div className={styles.introBody}>
