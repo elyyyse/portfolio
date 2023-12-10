@@ -80,8 +80,8 @@ function Navigation() {
         <NavigationMenu.Item className={styles.logo}>
           <NavLink href='/'>
             <motion.svg
-              width='6.25rem'
-              height='1.5rem'
+              width='110px'
+              height='27.5px'
               viewBox='0 0 998 354'
               fill='none'
               xmlns='http://www.w3.org/2000/svg'

@@ -6,7 +6,6 @@ import {
   Braces,
   Paintbrush2,
   PocketKnife,
-  Feather,
 } from 'lucide-react';
 
 import { PROJECT_DETAILS } from '@/constants';
