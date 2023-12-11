@@ -1,6 +1,15 @@
 .canvas {
   z-index: -1;
 }
+.fadeOut {
+  grid-column: 1 / -1;
+  width: 100%;
+  height: 60px;
+  background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+  /* z-index: -1; */
+  position: absolute;
+  top: calc(475px - 60px);
+}
 
 /* @media (hover: hover) and (pointer: fine) {
   .canvas {

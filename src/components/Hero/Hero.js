@@ -39,6 +39,7 @@ function draw(
     x: mousePosition.x - canvasBox.left,
     y: mousePosition.y - canvasBox.top,
   };
+  // if (relativeMousePos.y < 415)
   prevMousePositions.push(relativeMousePos);
 
   ctx.clearRect(0, 0, width, height);
@@ -92,12 +93,15 @@ function Hero({ className, numColors = 6, ...delegated }) {
   }
 
   return (
-    <canvas
-      {...delegated}
-      ref={canvasRef}
-      className={`${styles.canvas} ${className}`}
-      role='presentation'
-    ></canvas>
+    <>
+      <canvas
+        {...delegated}
+        ref={canvasRef}
+        className={`${styles.canvas} ${className}`}
+        role='presentation'
+      ></canvas>
+      <div className={styles.fadeOut}></div>
+    </>
   );
 }
 
