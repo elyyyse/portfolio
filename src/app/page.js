@@ -37,7 +37,7 @@ export default function Home() {
           cross-functional partnership and required me to deeply understand my
           colleagues&apos; goals and business needs. I look forward to bringing
           this experience and ethos of design thinking to the discipline of
-          development.
+          software development.
         </p>
         <p className={styles.introParagraph}>
           While I&apos;m a formally trained filmmaker, I am a wild-built
