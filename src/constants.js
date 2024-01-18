@@ -1,7 +1,7 @@
 export const PROJECT_DETAILS = {
   abstracts: [
     {
-      title: 'Raycast Extension',
+      title: 'Raycast Extensions',
       blurb:
         'Extensions built on top of the Raycast platform. They can be installed in the Raycast Store.',
       cta: 'Learn more',
