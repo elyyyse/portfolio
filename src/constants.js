@@ -1,6 +1,21 @@
 export const PROJECT_DETAILS = {
   abstracts: [
     {
+      title: 'Raycast Extension',
+      blurb:
+        'Extensions built on top of the Raycast platform. They can be installed in the Raycast Store.',
+      cta: 'Learn more',
+      images: {
+        wide: '',
+        reg: '/thumbnails/raycast-ext.png',
+      },
+      alt: 'Screenshot of the Raycast Store homepage',
+      slug: '/code/raycast',
+      featured: false,
+      comingSoon: false,
+      priority: true,
+    },
+    {
       title: 'Frontend Todo App',
       blurb:
         'A todo web application that uses local browser storage. Features include drag and drop task reordering and day/night modes.',
@@ -12,6 +27,21 @@ export const PROJECT_DETAILS = {
       alt: 'Todo app thumbnail showing a list of todos in night and day modes',
       slug: '/code/todo-app',
       featured: false,
+      comingSoon: false,
+      priority: true,
+    },
+    {
+      title: 'Rainbow Canvas',
+      blurb:
+        'A walk-thru of how I created the interactive hero at the top of my homepage. 🏳️‍🌈',
+      cta: 'Read story',
+      images: {
+        wide: '/thumbnails/rainbow-canvas-480.png',
+        reg: '/thumbnails/rainbow-canvas.png',
+      },
+      alt: 'A rectangular grid of dots in the colors of the rainbow',
+      slug: '/code/rainbow',
+      featured: true,
       comingSoon: false,
       priority: true,
     },
@@ -32,21 +62,6 @@ export const PROJECT_DETAILS = {
       priority: false,
     },
     {
-      title: 'Rainbow Canvas',
-      blurb:
-        'A walk-thru of how I created the interactive hero at the top of my homepage. 🏳️‍🌈',
-      cta: 'Read story',
-      images: {
-        wide: '/thumbnails/rainbow-canvas-480.png',
-        reg: '/thumbnails/rainbow-canvas.png',
-      },
-      alt: 'A rectangular grid of dots in the colors of the rainbow',
-      slug: '/code/rainbow',
-      featured: true,
-      comingSoon: false,
-      priority: true,
-    },
-    {
       title: 'Random Advice Generator',
       blurb:
         "A silly app that generates a random piece of advice from an API called 'Advice Slip'.",
@@ -61,21 +76,21 @@ export const PROJECT_DETAILS = {
       comingSoon: false,
       priority: false,
     },
-    {
-      title: 'Tell Me More',
-      blurb:
-        "My next project is an app to submit, comment on, and upvote product feedback, but until it's ready, here's a picture of a puppy in a box.",
-      cta: null,
-      images: {
-        wide: '',
-        reg: '/thumbnails/erda-estremera-sxNt9g77PE0-unsplash.jpg',
-      },
-      alt: '',
-      slug: '',
-      featured: false,
-      comingSoon: true,
-      priority: false,
-    },
+    // {
+    //   title: 'Tell Me More',
+    //   blurb:
+    //     "My next project is an app to submit, comment on, and upvote product feedback, but until it's ready, here's a picture of a puppy in a box.",
+    //   cta: null,
+    //   images: {
+    //     wide: '',
+    //     reg: '/thumbnails/erda-estremera-sxNt9g77PE0-unsplash.jpg',
+    //   },
+    //   alt: '',
+    //   slug: '',
+    //   featured: false,
+    //   comingSoon: true,
+    //   priority: false,
+    // },
   ],
   'todo-app': {
     title: 'Todo App',
