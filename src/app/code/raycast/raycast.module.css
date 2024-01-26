@@ -51,13 +51,15 @@
 
 .userImages {
   display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
   justify-content: space-between;
   margin-top: 1.5rem;
 }
 
 .userImage {
+  height: 70px;
   width: auto;
-  height: auto;
 }
 
 .listsContainer {
