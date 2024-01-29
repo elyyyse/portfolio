@@ -34,9 +34,9 @@ export default function Home() {
           I have spent the past decade+ working across nearly every area of a
           fast-growing tech company. My roles included collaborative,
           cross-functional partnership and required me to deeply understand my
-          colleagues&apos; goals and business needs. I look forward to bringing
-          this experience and ethos of design thinking to the discipline of
-          software development.
+          colleagues&apos; goals and business needs. I enjoy bringing this
+          experience and ethos of design thinking to the discipline of software
+          development.
         </p>
         <p className={styles.introParagraph}>
           While I&apos;m a formally trained filmmaker, I am a wild-built
