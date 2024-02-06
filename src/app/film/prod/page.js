@@ -148,12 +148,6 @@ export default function FilmProduction() {
               Smith, Brenda Moreno, Matt Wauhkonen, Fred Bové, Finley-Ray Cline,
               Dave Dyson, Colin Thomas
             </p>
-            <p>Produced by Celeste Olds</p>
-            <p>
-              Additional credits: Mary Elizabeth Cobb, Harvey Gold, Monica Yap,
-              MacKenzie Covington, Paulie Anne Duke, Brenda Moreno, Kalyn
-              Slaughter
-            </p>
           </div>
         </div>
       </div>
