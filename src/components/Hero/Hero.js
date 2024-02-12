@@ -1,5 +1,6 @@
 'use client';
 import React from 'react';
+import clsx from 'clsx';
 
 import useMousePosition from '@/hooks/use-mouse-position';
 import useCanvas from '@/hooks/use-canvas';
@@ -96,7 +97,7 @@ function Hero({ className, numColors = 6, ...delegated }) {
       <canvas
         {...delegated}
         ref={canvasRef}
-        className={`${styles.canvas} ${className}`}
+        className={clsx(styles.canvas, className)}
         role='presentation'
       ></canvas>
       <div className={styles.fadeOut}></div>

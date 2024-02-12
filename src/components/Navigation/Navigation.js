@@ -1,5 +1,6 @@
 'use client';
 import React from 'react';
+import clsx from 'clsx';
 
 import localFont from 'next/font/local';
 import Link from 'next/link';
@@ -75,7 +76,7 @@ function Navigation() {
   return (
     <NavigationMenu.Root delayDuration={100}>
       <NavigationMenu.List
-        className={`${anon.className} ${styles.navigationList}`}
+        className={clsx(anon.className, styles.navigationList)}
       >
         <NavigationMenu.Item className={styles.logo}>
           <NavLink href='/'>
@@ -139,7 +140,7 @@ function Navigation() {
 
         <NavigationMenu.Item className={styles.subMenuContainer}>
           <NavigationMenu.Trigger
-            className={`${styles.subMenuTrigger} ${homepageNav}`}
+            className={clsx(styles.subMenuTrigger, homepageNav)}
             // style={
             //   pathname.startsWith('/film')
             //     ? { textDecoration: 'line-through' }

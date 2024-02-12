@@ -1,12 +1,14 @@
 import React from 'react';
 import Script from 'next/script';
+import clsx from 'clsx';
+
 import styles from './Video.module.css';
 
 function Video({ videoSrc, title, className }) {
   return (
     <>
       <div
-        className={`${styles.video} ${className}`}
+        className={clsx(styles.video, className)}
         style={{ position: 'relative' }}
       >
         <iframe

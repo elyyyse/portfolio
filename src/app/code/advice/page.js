@@ -2,6 +2,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import clsx from 'clsx';
 import { ChevronRight } from 'react-feather';
 
 import useRandomProjectPath from '@/hooks/use-random-project-path';
@@ -63,7 +64,7 @@ export default function AdviceApp() {
       </div>
       <Image
         priority
-        className={`${styles.heroImage} ${styles.breakGrid}`}
+        className={clsx(styles.heroImage, styles.breakGrid)}
         src='/project-page/advice/advice-hero.png'
         alt="Advice app that says 'Try buying a coffee for the creator of a free public API, now and then.'"
         width={1440}
@@ -92,7 +93,7 @@ export default function AdviceApp() {
       </p>
       {/* <div className={`${styles.slideshow}  ${styles.breakGrid}`}> */}
       <Image
-        className={`${styles.slideshowImage} ${styles.breakGrid}`}
+        className={clsx(styles.slideshowImage, styles.breakGrid)}
         src='/project-page/advice/advice-mobile-active.png'
         alt="Mobile advice app that says 'If you get stuck, trying doing the opposite of what the solution requires.'"
         width={500}

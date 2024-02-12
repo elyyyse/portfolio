@@ -1,3 +1,4 @@
+import clsx from 'clsx';
 import {
   SquareDashedBottomCode,
   FileJson2,
@@ -89,7 +90,7 @@ export default function Home() {
           )
         )}
       </div>
-      <h2 className={`${styles.h2} ${styles.listHeader}`}>
+      <h2 className={clsx(styles.h2, styles.listHeader)}>
         This portfolio site is built with:
       </h2>
       <List className={styles.listWrapper}>

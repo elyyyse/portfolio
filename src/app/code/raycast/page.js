@@ -2,6 +2,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import clsx from 'clsx';
 import { ChevronRight } from 'react-feather';
 
 import useRandomProjectPath from '@/hooks/use-random-project-path';
@@ -81,7 +82,7 @@ export default function RaycastExt() {
       </p>
       <Image
         priority
-        className={`${styles.heroImage} ${styles.breakGrid}`}
+        className={clsx(styles.heroImage, styles.breakGrid)}
         src='/project-page/raycast/tomito-hero.png'
         alt='Raycast app showing collection of Tomito commands'
         width={1440}
@@ -118,7 +119,7 @@ export default function RaycastExt() {
       <div className={styles.userImages}>
         <Image
           priority
-          className={`${styles.userImage}`}
+          className={styles.userImage}
           src='/project-page/raycast/tomito-user-1.png'
           alt='Slack message stating the Tomito Controls extension made them a Tomito user'
           width={882}
@@ -126,7 +127,7 @@ export default function RaycastExt() {
         />
         <Image
           priority
-          className={`${styles.userImage}`}
+          className={styles.userImage}
           src='/project-page/raycast/tomito-user-2.png'
           alt='Slack message stating the Tomito app and extension work smoothly together'
           width={475}
@@ -136,7 +137,7 @@ export default function RaycastExt() {
 
       {/* <h2 className={styles.h2}>Stay tuned for the next extension...</h2> */}
 
-      {/* <div className={`${styles.slideshow}  ${styles.breakGrid}`}>
+      {/* <div className={clsx(styles.slideshow, styles.breakGrid)}>
         <Image
           className={styles.slideshowImage}
           src='/project-page/age-calc/age-calc-leap-error.png'

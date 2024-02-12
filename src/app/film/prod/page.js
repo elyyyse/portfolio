@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import clsx from 'clsx';
 
 import Video from '@/components/Video';
 import Footnote from '@/components/Footnote';
@@ -37,7 +38,7 @@ export default function FilmProduction() {
           <p>Winner Shorty Award 2021 | Best use of Long Form Video</p>{' '}
           <p>Nominee Brand Film Award 2021 | Best in direction</p>
           <p>Vimeo Staff Pick</p>
-          <p className={`${styles.credits} ${styles.creditsStart}`}>
+          <p className={clsx(styles.credits, styles.creditsStart)}>
             Directed by Erin Brethauer and Tim Hussin
           </p>
           <p className={styles.credits}>
@@ -49,7 +50,7 @@ export default function FilmProduction() {
         </div>
       </div>
 
-      <div className={`${styles.videoWrapper} ${styles.helpfulPeeps}`}>
+      <div className={clsx(styles.videoWrapper, styles.helpfulPeeps)}>
         <Video
           className={styles.video}
           videoSrc='https://player.vimeo.com/video/714809176?badge=0&amp;autopause=0&amp;quality_selector=1&amp;player_id=0&amp;app_id=58479'
@@ -70,7 +71,7 @@ export default function FilmProduction() {
             and Best of the Year
           </p>
           <p>Honoree at Webby Awards 2021</p>
-          <p className={`${styles.credits} ${styles.creditsStart}`}>
+          <p className={clsx(styles.credits, styles.creditsStart)}>
             Directed by Sinha Agha
           </p>
           <p className={styles.credits}>
@@ -89,7 +90,7 @@ export default function FilmProduction() {
         YouTube pre-roll.
       </h3>
 
-      <div className={`${styles.videoWrapper} ${styles.productVids}`}>
+      <div className={clsx(styles.videoWrapper, styles.productVids)}>
         <Video
           className={styles.video}
           videoSrc='https://player.vimeo.com/video/714793396?badge=0&amp;autopause=0&amp;quality_selector=1&amp;player_id=0&amp;app_id=58479'
@@ -118,7 +119,7 @@ export default function FilmProduction() {
         </div>
       </div>
 
-      <div className={`${styles.videoWrapper} ${styles.productVids}`}>
+      <div className={clsx(styles.videoWrapper, styles.productVids)}>
         <Video
           className={styles.video}
           videoSrc='https://player.vimeo.com/video/715447089?badge=0&amp;autopause=0&amp;quality_selector=1&amp;player_id=0&amp;app_id=58479'

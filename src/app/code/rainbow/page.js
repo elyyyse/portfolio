@@ -2,6 +2,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import clsx from 'clsx';
 import { ChevronRight } from 'react-feather';
 
 import useRandomProjectPath from '@/hooks/use-random-project-path';
@@ -28,7 +29,7 @@ export default function RainbowCanvas() {
         height={844}
       ></Image>
       <h1 className={styles.h1}>Interactive Rainbow Canvas</h1>
-      <p className={`${styles.introBody} ${styles.p}`}>
+      <p className={clsx(styles.introBody, styles.p)}>
         When I set out to build this portfolio site, I knew I wanted an
         interactive element as the homepage hero. Inspired by{' '}
         <Link href='https://www.joshwcomeau.com/' target='_blank'>
@@ -70,7 +71,7 @@ export default function RainbowCanvas() {
         trail the mouse.
       </p>
       <div className={styles.note}>
-        <details className={`${styles.p} ${styles.aside}`}>
+        <details className={clsx(styles.p, styles.aside)}>
           <summary>
             <ChevronRight
               className={styles.chevronDown}
@@ -136,7 +137,7 @@ export default function RainbowCanvas() {
         <li>A selection of dope colors</li>
       </ul>
       <h2 className={styles.h2}>The basic steps</h2>
-      <ol className={`${styles.ol} ${styles.topOl}`}>
+      <ol className={clsx(styles.ol, styles.topOl)}>
         <li>
           Draw a grid of dots and paint them your preferred colors. The initial
           draw takes four loops — I&apos;m looping over my color selection, the
@@ -158,7 +159,7 @@ export default function RainbowCanvas() {
         height={346}
         border
       />
-      <ol className={`${styles.ol} ${styles.bottomOl}`} start={3}>
+      <ol className={clsx(styles.ol, styles.bottomOl)} start={3}>
         <li>
           Next you need to calculate the distance from the center of each dot to
           your cursor using the 🤗Pythagorean Theorem🤗. And that allows you to
@@ -175,7 +176,7 @@ export default function RainbowCanvas() {
         height={276}
         border
       />
-      <ol className={`${styles.ol} ${styles.bottomOl}`} start={4}>
+      <ol className={clsx(styles.ol, styles.bottomOl)} start={4}>
         <li>
           Now we&apos;re ready for that fourth loop. Wrapped around all the
           loops from step 1, I&apos;m looping over the most recent 30 mouse

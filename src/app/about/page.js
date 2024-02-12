@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import clsx from 'clsx';
 
 import List from '@/components/List';
 import Footnote from '@/components/Footnote';
@@ -99,7 +100,7 @@ export default function About() {
           </div>
 
           <div className={styles.listWrapper}>
-            <h3 className={`${styles.listHeader} ${styles.nestedListHeader}`}>
+            <h3 className={clsx(styles.listHeader, styles.nestedListHeader)}>
               Online educators I have a parasocial relationship with
             </h3>
             <List>

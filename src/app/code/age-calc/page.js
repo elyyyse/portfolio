@@ -2,6 +2,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import clsx from 'clsx';
 import { ChevronRight } from 'react-feather';
 
 import useRandomProjectPath from '@/hooks/use-random-project-path';
@@ -71,7 +72,7 @@ export default function AgeCalc() {
       </div>
       <Image
         priority
-        className={`${styles.heroImage} ${styles.breakGrid}`}
+        className={clsx(styles.heroImage, styles.breakGrid)}
         src='/project-page/age-calc/age-calc-hero.png'
         alt='Age calculator app showing the age of someone born April 7, 2015'
         width={1440}
@@ -136,9 +137,9 @@ export default function AgeCalc() {
         find solutions that, as of this writing, I haven&apos;t been able break.
         🤞🏽
       </p>
-      <div className={`${styles.slideshow}  ${styles.breakGrid}`}>
+      <div className={clsx(styles.slideshow, styles.breakGrid)}>
         {/* <PlayableGif
-        className={`${styles.slideshowImage} ${styles.breakGrid}`}
+        className={clsx(styles.slideshowImage, styles.breakGrid)}
         gifSrc='/project-page/age-calc/animated-numbers.gif'
         gifAltText=''
         thumbnailSrc='/project-page/age-calc/animated-numbers.png'
