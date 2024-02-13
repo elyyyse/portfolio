@@ -3,17 +3,17 @@
   font-size: 0.9rem;
 }
 
-/* .bullets::before {
-  content: '';
-  display: inline-block;
-  width: 1rem;
-  height: 0.5rem;
-  padding-right: 2rem;
-  stroke-width: 1;
-  background: url('/arrow-right.svg') no-repeat;
-  background-position: left center;
-} */
+.markers {
+  list-style-type: revert;
+  font-size: unset;
+}
 
-/* .listItem::after {
-  content: ' • ';
-} */
+.markers li {
+  margin-left: var(--32px);
+  /* margin-top: var(--16px); */
+}
+
+.markers > ul,
+.markers > ol {
+  margin-left: var(--16px);
+}

@@ -1,22 +1,22 @@
 import React from 'react';
-import { Dot } from 'lucide-react';
+import clsx from 'clsx';
 
 import styles from './List.module.css';
 
-function List({ bullets = false, children, ...delegated }) {
-  // const listItems = [...children];
-  // {listItems.map((item, index) => ())}
-
+function List({
+  as: Tag = 'ul',
+  markers = false,
+  className,
+  children,
+  ...delegated
+}) {
   return (
-    <ul className={styles.list} {...delegated}>
+    <Tag
+      className={clsx(styles.list, markers && styles.markers, className)}
+      {...delegated}
+    >
       {children}
-      {/* <React.Fragment key={index}>
-          <Dot className={styles.listItem} />
-          <li className={bullets ? `${styles.bullets}` : `${styles.none}`}>
-            {item.props.children}
-          </li>
-        </React.Fragment> */}
-    </ul>
+    </Tag>
   );
 }
 

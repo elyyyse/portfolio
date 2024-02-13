@@ -59,10 +59,7 @@
 }
 
 .bodyList li {
-  font-size: var(--16px);
-  list-style-type: unset;
   margin-top: var(--16px);
-  margin-left: var(--32px);
 }
 
 .slideshowImage {

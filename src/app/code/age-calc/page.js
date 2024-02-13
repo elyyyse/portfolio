@@ -102,7 +102,7 @@ export default function AgeCalc() {
         singular form if their respective output number is 1.
       </p>
       <h2 className={styles.h2}>Helpful resources</h2>
-      <List className={styles.bodyList}>
+      <List as='ul' markers={true} className={styles.bodyList}>
         <li>
           <Link
             href='https://www.digitalocean.com/community/tutorials/understanding-date-and-time-in-javascript'

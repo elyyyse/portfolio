@@ -89,7 +89,7 @@ export default function RaycastExt() {
         height={810}
       />
       <h3 className={styles.h3}>Helpful resources</h3>
-      <List className={styles.bodyList}>
+      <List as='ul' markers={true} className={styles.bodyList}>
         <li>
           <Link href='https://developers.raycast.com/' target='_blank'>
             Raycast API Docs

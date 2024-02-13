@@ -74,26 +74,17 @@
   margin-bottom: var(--16px);
 }
 
-.ul,
-.ol {
-  line-height: 1.6;
-}
-
-.ul > li,
-.ol > li {
-  margin-left: var(--32px);
-}
-.ul > ul {
-  margin-left: var(--16px);
-}
-
-.ol {
+.steps {
   margin: var(--32px) 0;
 }
 
-.ol:first-of-type {
+.steps:first-of-type {
   margin: var(--16px) 0 var(--32px);
-  /* margin-bottom: var(--32px); */
+}
+
+.tools,
+.steps {
+  line-height: 1.6;
 }
 
 .regImg,

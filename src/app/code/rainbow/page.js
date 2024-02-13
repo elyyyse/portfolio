@@ -7,6 +7,7 @@ import { ChevronRight } from 'react-feather';
 
 import useRandomProjectPath from '@/hooks/use-random-project-path';
 
+import List from '@/components/List';
 import PlayableGif from '@/components/PlayableGif';
 import Footnote from '@/components/Footnote';
 import styles from './rainbow.module.css';
@@ -120,10 +121,10 @@ export default function RainbowCanvas() {
         Note that I happened to build this in React, but the principles apply to
         other frameworks.
       </p>
-      <ul className={styles.ul}>
+      <List as='ul' markers={true} className={styles.tools}>
         <li>A custom hook to return mouse position</li>
         <li>Another custom hook to set up your canvas—it returns:</li>
-        <ul className={styles.ul}>
+        <ul>
           <li>A ref to identify your canvas element</li>
           <li>
             A bounding box, so you can know when the mouse position overlaps the
@@ -135,9 +136,10 @@ export default function RainbowCanvas() {
           </li>
         </ul>
         <li>A selection of dope colors</li>
-      </ul>
+      </List>
+
       <h2 className={styles.h2}>The basic steps</h2>
-      <ol className={clsx(styles.ol, styles.topOl)}>
+      <List as='ol' markers={true} className={styles.steps}>
         <li>
           Draw a grid of dots and paint them your preferred colors. The initial
           draw takes four loops — I&apos;m looping over my color selection, the
@@ -148,7 +150,8 @@ export default function RainbowCanvas() {
           You already know where the mouse is relative to the canvas, so now you
           can manipulate the radius of each dot based on mouse position.
         </li>
-      </ol>
+      </List>
+
       <PlayableGif
         className={styles.gif}
         gifSrc='/project-page/rainbow/rainbow-dot-radius.gif'
@@ -159,13 +162,13 @@ export default function RainbowCanvas() {
         height={346}
         border
       />
-      <ol className={clsx(styles.ol, styles.bottomOl)} start={3}>
+      <List as='ol' markers={true} className={clsx(styles.steps)} start={3}>
         <li>
           Next you need to calculate the distance from the center of each dot to
           your cursor using the 🤗Pythagorean Theorem🤗. And that allows you to
           only affect dots that are a particular distance from the mouse.
         </li>
-      </ol>
+      </List>
       <PlayableGif
         className={styles.gif}
         gifSrc='/project-page/rainbow/rainbow-flag-inverted.gif'
@@ -176,7 +179,7 @@ export default function RainbowCanvas() {
         height={276}
         border
       />
-      <ol className={clsx(styles.ol, styles.bottomOl)} start={4}>
+      <List as='ol' markers={true} className={clsx(styles.steps)} start={4}>
         <li>
           Now we&apos;re ready for that fourth loop. Wrapped around all the
           loops from step 1, I&apos;m looping over the most recent 30 mouse
@@ -185,7 +188,7 @@ export default function RainbowCanvas() {
           then I just fiddled with all the numbers until I achieved a sort of
           paint spatter effect.
         </li>
-      </ol>
+      </List>
       <p className={styles.p}>
         And that&apos;s about the gist. I am pretty happy with where I landed,
         but as promised, here are some snapshots from the journey
