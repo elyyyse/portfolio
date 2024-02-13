@@ -18,25 +18,25 @@
 
 .h1,
 .sectionHeader {
-  font-size: 1rem;
+  font-size: var(--16px);
   font-weight: 400;
   /* text-transform: uppercase; */
   text-align: center;
-  margin-top: 1rem;
+  margin-top: var(--16px);
 }
 
 .h2,
 .sectionBlurb {
-  font-size: 1.5rem;
+  font-size: var(--24px);
   max-width: 80%;
   align-self: center;
-  margin: 2rem 0 2rem;
+  margin: var(--32px) 0 var(--32px);
   font-weight: 400;
 }
 
 .h3 {
   font-weight: 400;
-  margin-bottom: 1rem;
+  margin-bottom: var(--16px);
 }
 
 .seriesTitle {
@@ -99,7 +99,7 @@
   }
   .textWrapper > h2 {
     text-align: left;
-    font-size: 2.5rem;
+    font-size: var(--40px);
     font-weight: 400;
     line-height: 1;
   }
@@ -128,6 +128,6 @@
     flex-basis: 30%;
   }
   .textWrapper > h2 {
-    font-size: 3rem;
+    font-size: var(--48px);
   }
 }

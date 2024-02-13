@@ -4,8 +4,8 @@
 }
 
 .h1 {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
+  font-size: var(--24px);
+  margin-bottom: var(--16px);
 }
 
 .heroContainer {
@@ -15,13 +15,13 @@
 
 .imageWrapper {
   align-self: center;
-  margin-top: 2rem;
+  margin-top: var(--32px);
   display: flex;
   flex-direction: column;
   gap: 0.3rem;
 }
 .photoCred {
-  font-size: 0.625rem;
+  font-size: var(--10px);
   align-self: flex-end;
 }
 
@@ -31,7 +31,7 @@
 }
 
 .textWrapper > p {
-  padding: 0.625rem 0;
+  padding: var(--10px) 0;
   line-height: 1.75;
 }
 
@@ -40,7 +40,7 @@
 }
 
 .h2 {
-  font-size: 1.5rem;
+  font-size: var(--24px);
   margin-top: 4rem;
   width: 80%;
   align-self: center;
@@ -48,7 +48,7 @@
 
 .listsContainer {
   width: 80%;
-  margin: 2rem auto;
+  margin: var(--32px) auto;
   line-height: 1.5;
   display: flex;
   justify-content: flex-start;
@@ -58,7 +58,7 @@
 
 .listHeader {
   font-size: 0.9rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: var(--8px);
   text-transform: uppercase;
 }
 .nestedListHeader {
@@ -101,7 +101,7 @@
 
     /* styles for legibility when text intersects bg image */
     margin-left: 4rem;
-    padding: 1rem;
+    padding: var(--16px);
     background-color: rgba(255, 255, 255, 0.5);
     border-radius: 5px;
 

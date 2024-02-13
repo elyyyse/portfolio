@@ -25,20 +25,20 @@
   margin-top: 3rem;
 }
 .h2 {
-  margin-bottom: 1rem;
+  margin-bottom: var(--16px);
 }
 
 .p {
-  margin: 2rem 0;
+  margin: var(--32px) 0;
 }
 .p:last-of-type {
   margin: 0;
 }
 .note {
-  margin: 0 0 2rem;
+  margin: 0 0 var(--32px);
 }
 .storyboard {
-  margin-top: 2rem;
+  margin-top: var(--32px);
 }
 
 .introBody {
@@ -52,7 +52,7 @@
   margin-top: 0;
   border: 1px solid var(--accent-color);
   border-radius: 5px;
-  padding: 1rem;
+  padding: var(--16px);
 }
 .aside > summary {
   list-style: none;
@@ -64,14 +64,14 @@
   transition: transform 250ms ease;
 }
 .aside[open] {
-  padding: 1rem;
+  padding: var(--16px);
   .chevronDown {
     transform: rotate(90deg);
   }
 }
 .aside[open] summary {
   border-bottom: 1px solid var(--accent-color);
-  margin-bottom: 1rem;
+  margin-bottom: var(--16px);
 }
 
 .ul,
@@ -81,19 +81,19 @@
 
 .ul > li,
 .ol > li {
-  margin-left: 2rem;
+  margin-left: var(--32px);
 }
 .ul > ul {
-  margin-left: 1rem;
+  margin-left: var(--16px);
 }
 
 .ol {
-  margin: 2rem 0;
+  margin: var(--32px) 0;
 }
 
 .ol:first-of-type {
-  margin: 1rem 0 2rem;
-  /* margin-bottom: 2rem; */
+  margin: var(--16px) 0 var(--32px);
+  /* margin-bottom: var(--32px); */
 }
 
 .regImg,
@@ -127,6 +127,6 @@
   }
 
   .p:first-of-type {
-    margin-top: 1rem;
+    margin-top: var(--16px);
   }
 }

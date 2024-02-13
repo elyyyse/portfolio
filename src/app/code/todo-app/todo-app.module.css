@@ -19,22 +19,22 @@
 
 .h1 {
   margin-top: 3rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: var(--8px);
 }
 
 .h2 {
-  margin-top: 2rem;
+  margin-top: var(--32px);
 }
 
 .p {
-  font-size: 1rem;
+  font-size: var(--16px);
   line-height: 1.75;
-  margin-top: 1.5rem;
+  margin-top: var(--24px);
 }
 
 .pContinued {
   line-height: 1.75;
-  margin-top: 1rem;
+  margin-top: var(--16px);
 }
 
 .heroImage {
@@ -59,10 +59,10 @@
 }
 
 .bodyList li {
-  font-size: 1rem;
+  font-size: var(--16px);
   list-style-type: unset;
-  margin-top: 1rem;
-  margin-left: 2rem;
+  margin-top: var(--16px);
+  margin-left: var(--32px);
 }
 
 .slideshowImage {

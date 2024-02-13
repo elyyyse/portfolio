@@ -39,13 +39,13 @@
 }
 
 .h2 {
-  margin-top: 2rem;
+  margin-top: var(--32px);
 }
 
 .p {
-  font-size: 1rem;
+  font-size: var(--16px);
   line-height: 1.75;
-  margin-top: 2rem;
+  margin-top: var(--32px);
 }
 
 .listsContainer {
@@ -58,7 +58,7 @@
 }
 
 .listHeaders {
-  font-size: 1rem;
+  font-size: var(--16px);
   text-transform: uppercase;
 }
 

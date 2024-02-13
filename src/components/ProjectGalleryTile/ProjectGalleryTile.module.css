@@ -45,16 +45,16 @@
 }
 
 .projectTitle {
-  font-size: 1rem;
+  font-size: var(--16px);
 }
 
 .projectBlurb {
   font-size: 0.8rem;
-  margin-top: 0.625rem;
+  margin-top: var(--10px);
 }
 
 .cta {
-  margin-top: 0.625rem;
+  margin-top: var(--10px);
   font-size: 0.8rem;
   text-transform: uppercase;
   text-decoration: underline 0.15em rgba(0, 0, 0, 0);

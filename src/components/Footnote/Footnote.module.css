@@ -4,7 +4,7 @@
 }
 
 .asterisk {
-  font-size: 1.25rem;
+  font-size: var(--20px);
   line-height: 1;
   color: #c4362c;
   font-weight: 600;
