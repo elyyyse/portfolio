@@ -10,7 +10,7 @@
 
 .markers li {
   margin-left: var(--32px);
-  /* margin-top: var(--16px); */
+  margin-top: var(--16px);
 }
 
 .markers > ul,

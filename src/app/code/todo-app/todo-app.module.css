@@ -58,10 +58,6 @@
   text-transform: uppercase;
 }
 
-.bodyList li {
-  margin-top: var(--16px);
-}
-
 .slideshowImage {
   width: 300px;
   height: auto;

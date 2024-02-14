@@ -22,37 +22,31 @@
 
 .h1,
 .h2 {
-  margin-top: 3rem;
-}
-.h2 {
-  margin-bottom: var(--16px);
+  margin-top: var(--48px);
 }
 
 .p {
-  margin: var(--32px) 0;
-}
-.p:last-of-type {
-  margin: 0;
-}
-.note {
-  margin: 0 0 var(--32px);
-}
-.storyboard {
   margin-top: var(--32px);
 }
-
-.introBody {
+.p:first-of-type {
   padding: 12px;
   border-radius: 5px;
   background-color: rgba(255, 255, 255, 0.5);
   margin-top: 4rem;
 }
+.p:last-of-type {
+  margin-top: var(--16px);
+}
+
+.note {
+  margin: var(--16px) 0 var(--32px);
+}
 
 .aside {
-  margin-top: 0;
   border: 1px solid var(--accent-color);
   border-radius: 5px;
   padding: var(--16px);
+  margin-top: var(--32px);
 }
 .aside > summary {
   list-style: none;
@@ -74,23 +68,20 @@
   margin-bottom: var(--16px);
 }
 
-.steps {
-  margin: var(--32px) 0;
+.tools li {
+  margin-top: unset;
+  line-height: 1.75;
 }
 
-.steps:first-of-type {
-  margin: var(--16px) 0 var(--32px);
-}
-
-.tools,
 .steps {
-  line-height: 1.6;
+  margin: var(--16px) 0;
 }
 
 .regImg,
 .wideImg {
   border: 2px solid var(--accent-color);
   justify-self: center;
+  margin-top: var(--32px);
 }
 
 .regImg {
@@ -105,6 +96,7 @@
 
 .gif {
   justify-self: center;
+  margin-top: var(--16px);
 }
 
 .nextProject {

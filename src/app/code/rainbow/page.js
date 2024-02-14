@@ -2,7 +2,6 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import clsx from 'clsx';
 import { ChevronRight } from 'react-feather';
 
 import useRandomProjectPath from '@/hooks/use-random-project-path';
@@ -30,7 +29,7 @@ export default function RainbowCanvas() {
         height={844}
       ></Image>
       <h1 className={styles.h1}>Interactive Rainbow Canvas</h1>
-      <p className={clsx(styles.introBody, styles.p)}>
+      <p className={styles.p}>
         When I set out to build this portfolio site, I knew I wanted an
         interactive element as the homepage hero. Inspired by{' '}
         <Link href='https://www.joshwcomeau.com/' target='_blank'>
@@ -71,37 +70,35 @@ export default function RainbowCanvas() {
         just for fun), I did figure out that I wanted the reveal to sort of
         trail the mouse.
       </p>
-      <div className={styles.note}>
-        <details className={clsx(styles.p, styles.aside)}>
-          <summary>
-            <ChevronRight
-              className={styles.chevronDown}
-              size={16}
-              // aria-hidden
-            />
-            A little aside on how I learn:
-          </summary>
-          <p>
-            In a flurry of googling, I found Josh talking about the principles
-            behind his design during a{' '}
-            <Link
-              href='https://www.youtube.com/watch?v=smkKv29iaZ8'
-              target='_blank'
-            >
-              Frontend Horse charity livestream
-            </Link>{' '}
-            from a couple years ago. This was a great help&#8212;not only did it
-            point me in the right direction, but when I looked closely, I was
-            able to discern a bunch of hints about what my end product needed to
-            look like. For example, you never see Josh&apos;s custom hooks, but
-            you do see what they return. (Though in the case of his normalize( )
-            utility function, I got lucky and was able to pause the video and
-            steal it line for line.) These are my favorite kinds of resources
-            because they keep me from spinning my wheels while still leaving me
-            plenty to figure out on my own. It&apos;s how I learn best.
-          </p>
-        </details>
-      </div>
+      <details className={styles.aside}>
+        <summary>
+          <ChevronRight
+            className={styles.chevronDown}
+            size={16}
+            // aria-hidden
+          />
+          A little aside on how I learn:
+        </summary>
+        <p>
+          In a flurry of googling, I found Josh talking about the principles
+          behind his design during a{' '}
+          <Link
+            href='https://www.youtube.com/watch?v=smkKv29iaZ8'
+            target='_blank'
+          >
+            Frontend Horse charity livestream
+          </Link>{' '}
+          from a couple years ago. This was a great help&#8212;not only did it
+          point me in the right direction, but when I looked closely, I was able
+          to discern a bunch of hints about what my end product needed to look
+          like. For example, you never see Josh&apos;s custom hooks, but you do
+          see what they return. (Though in the case of his normalize( ) utility
+          function, I got lucky and was able to pause the video and steal it
+          line for line.) These are my favorite kinds of resources because they
+          keep me from spinning my wheels while still leaving me plenty to
+          figure out on my own. It&apos;s how I learn best.
+        </p>
+      </details>
       <Image
         className={styles.regImg}
         src='/project-page/rainbow/storyboard.jpeg'
@@ -151,7 +148,6 @@ export default function RainbowCanvas() {
           can manipulate the radius of each dot based on mouse position.
         </li>
       </List>
-
       <PlayableGif
         className={styles.gif}
         gifSrc='/project-page/rainbow/rainbow-dot-radius.gif'
@@ -162,7 +158,7 @@ export default function RainbowCanvas() {
         height={346}
         border
       />
-      <List as='ol' markers={true} className={clsx(styles.steps)} start={3}>
+      <List as='ol' markers={true} className={styles.steps} start={3}>
         <li>
           Next you need to calculate the distance from the center of each dot to
           your cursor using the 🤗Pythagorean Theorem🤗. And that allows you to
@@ -179,7 +175,7 @@ export default function RainbowCanvas() {
         height={276}
         border
       />
-      <List as='ol' markers={true} className={clsx(styles.steps)} start={4}>
+      <List as='ol' markers={true} className={styles.steps} start={4}>
         <li>
           Now we&apos;re ready for that fourth loop. Wrapped around all the
           loops from step 1, I&apos;m looping over the most recent 30 mouse

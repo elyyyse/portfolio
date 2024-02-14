@@ -80,7 +80,7 @@ export default function TodoApp() {
         framework. The basic structure I created mirrors several React
         principles.
       </p>
-      <List as='ul' markers={true} className={styles.bodyList}>
+      <List as='ul' markers={true}>
         <li>
           There are two main pieces of state&#8212;the todos themselves and
           which status filter is selected
@@ -101,7 +101,7 @@ export default function TodoApp() {
         </li>
       </List>
       <h2 className={styles.h2}>Helpful resources</h2>
-      <List as='ul' markers={true} className={styles.bodyList}>
+      <List as='ul' markers={true}>
         <li>
           <Link
             href='https://developer.mozilla.org/en-US/docs/Web/HTML/Element/template'
