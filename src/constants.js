@@ -76,21 +76,21 @@ export const PROJECT_DETAILS = {
       comingSoon: false,
       priority: false,
     },
-    // {
-    //   title: 'Tell Me More',
-    //   blurb:
-    //     "My next project is an app to submit, comment on, and upvote product feedback, but until it's ready, here's a picture of a puppy in a box.",
-    //   cta: null,
-    //   images: {
-    //     wide: '',
-    //     reg: '/thumbnails/erda-estremera-sxNt9g77PE0-unsplash.jpg',
-    //   },
-    //   alt: '',
-    //   slug: '',
-    //   featured: false,
-    //   comingSoon: true,
-    //   priority: false,
-    // },
+    {
+      title: 'Maestro App (Coming Soon)',
+      blurb:
+        "Maestro is for independent instructors, coaches, and other professional service providers to manage their business. It's a work in progress, so until it's ready, here's a picture of a puppy in a box.",
+      cta: null,
+      images: {
+        wide: '/thumbnails/erda-estremera-sxNt9g77PE0-unsplash-480.png',
+        reg: '/thumbnails/erda-estremera-sxNt9g77PE0-unsplash.jpg',
+      },
+      alt: '',
+      slug: '',
+      featured: true,
+      comingSoon: true,
+      priority: false,
+    },
   ],
   'todo-app': {
     title: 'Todo App',
