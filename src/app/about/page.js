@@ -80,7 +80,7 @@ export default function About() {
               </li>
               <li>
                 <Link
-                  href='https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/'
+                  href='https://www.w3.org/WAI/ARIA/apg/patterns/'
                   target='_blank'
                   prefetch={false}
                 >
