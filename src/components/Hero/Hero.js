@@ -81,7 +81,7 @@ function draw(
 
 function Hero({ className, numColors = 6, ...delegated }) {
   const width = typeof window === 'undefined' ? 1000 : window.innerWidth;
-  const height = 475;
+  const height = 425;
   const numRows = 32;
   const numCols = 16;
 

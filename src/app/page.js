@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import clsx from 'clsx';
 import {
   SquareDashedBottomCode,
@@ -24,44 +25,46 @@ export default function Home() {
   return (
     <main className={styles.gridWrapper}>
       <Hero className={styles.canvas}></Hero>
-      <h1 className={styles.introHeading}>
-        Hello there, I&apos;m <span className={styles.emphasize}>Elyse</span>
-        —a frontend developer who made a mid-career transition from film and
-        creative brand design. But more than that, I am a{' '}
-        <span className={styles.emphasize}>lifelong learner</span>.
-      </h1>
+      <div className={styles.introWrapper}>
+        <h1 className={styles.introHeading}>
+          Hello there, I&apos;m <span className={styles.emphasize}>Elyse</span>.
+          I help brands tell their story.{' '}
+        </h1>
+        {/* <p className={styles.elyseIllo}> */}{' '}
+        <Image
+          src='/elyse-illo.png'
+          alt='A Notion Faces illustration of Elyse'
+          width={100}
+          height={100}
+        />
+        {/* </p> */}
+      </div>
+
       <div className={styles.introBody}>
         <p className={styles.introParagraph}>
-          I have spent the past decade+ working across nearly every area of a
-          fast-growing tech company. My roles included collaborative,
-          cross-functional partnership and required me to deeply understand my
-          colleagues&apos; goals and business needs. I enjoy bringing this
-          experience and ethos of design thinking to the discipline of software
-          development.
+          Movies were my first love, and video continues to be the storytelling
+          medium that comes most naturally to me. But I&apos;m also addicted to
+          learning, and throughout my career, I&apos;ve had the opportunity to
+          expand my competency to things like print media, OOH campaigns, and
+          live events. I&apos;ve been lucky enough to travel for my work, and
+          have even won some awards.
         </p>
         <p className={styles.introParagraph}>
-          While I&apos;m a formally trained filmmaker, I am a wild-built
-          <Footnote>
-            This is a reference to an excellent sci-fi novella called &lsquo;A
-            Psalm for the Wild-Built&rsquo; by Becky Chambers, in which she
-            describes a &lsquo;wild-built&rsquo; robot who was put together from
-            pieces of the robots who came before it.
-          </Footnote>{' '}
-          developer. I&apos;ve learned from previous career experience, online
-          education resources, and a lot of trial and error. I&apos;m also lucky
-          to have a network of incredibly talented and generous colleagues to
-          tap into. I&apos;m proud of what I have accomplished so far, and I am
-          ready to join a team that I can learn from and grow with.
+          On this site, you&apos;ll find a curated collection of videos that
+          I&apos;ve worked on—either behind or in front of the camera (sometimes
+          both). You&apos;ll also find my dabblings in frontend software
+          development (see earlier learning addiction). I used these frontend
+          skills to build the very site you&apos;re browsing right now.
         </p>
       </div>
       <div className={styles.socialIconLinks}>
         <SocialIconLink platform='Linkedin' />
-        <SocialIconLink platform='GitHub' />
+        {/* <SocialIconLink platform='GitHub' /> */}
       </div>
-      <h2 className={styles.h2}>
-        Here are some things I&apos;ve been working on
-      </h2>
-      <div className={styles.projectsWrapper}>
+      {/* <h2 className={styles.h2}>
+        Here are some of my most meaningful projects
+      </h2> */}
+      {/* <div className={styles.projectsWrapper}>
         {abstracts.map(
           ({
             title,
@@ -89,9 +92,9 @@ export default function Home() {
             </ProjectGalleryTile>
           )
         )}
-      </div>
+      </div> */}
       <h2 className={clsx(styles.h2, styles.listHeader)}>
-        This portfolio site is built with:
+        This site is built with:
       </h2>
       <List className={styles.listWrapper}>
         <li className={styles.listItem}>

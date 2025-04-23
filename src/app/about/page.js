@@ -17,18 +17,23 @@ export default function About() {
       <div className={styles.heroContainer}>
         <div className={styles.textWrapper}>
           <h1 className={styles.h1}>
-            Hi, I&apos;m Elyse - a frontend developer based in the San Francisco
-            Bay Area.
+            Hi, I&apos;m Elyse - a brand strategist and filmmaker based in the
+            San Francisco Bay Area
           </h1>
           <p>
-            In my previous career in media, a key focus for me was
-            representation. Sharing stories is a fundamental part of what makes
-            us human. The stories we choose to tell and listen to shape the
-            world around us, and it is imperative that we hear perspectives from
-            as many people as possible. The parallel I&apos;ve found in software
-            is accessibility. It&apos;s a difficult subject to nail down, but I
-            aim to learn as much as I can, so I can make products for as many
-            people as possible.
+            I&apos;ve worked in the tech industry for over a decade. Starting my
+            career in project management, I grew to build and direct
+            multidisciplinary creative teams. My process with any work challenge
+            is to start from a place of curiosty and seek to develop deep
+            understanding.
+          </p>
+          {/* <p>I am a regular attendee at Alameda Library Board meetings.</p> */}
+          {/* As a lifelong learner, I have collected an eclectic array of skills
+            that serve me in unexpected ways. */}
+          <p>
+            I&apos;m an avid reader, a slightly better than mediocre rock
+            climber, and a big believer in the power of threes. If given half a
+            chance, I will put my toes in most any body of water I come across.
           </p>
           <p>
             If you&apos;re interested in building something together,{' '}
@@ -50,94 +55,60 @@ export default function About() {
       <h2 className={styles.h2}>Get to know me in list form</h2>
       <div className={styles.listsContainer}>
         <div className={styles.listWrapper}>
-          <div className={styles.listWrapper}>
-            <h3 className={styles.listHeader}>
-              Resources that have been invaluable to me
-            </h3>
-            <List>
-              <li>
-                <Link
-                  href='https://www.frontendmentor.io/'
-                  target='_blank'
-                  prefetch={false}
-                >
-                  Frontend Mentor
-                  <Footnote>
-                    A platform that provides professional designs, so you can
-                    focus on improving your coding. Users can build their apps
-                    using whichever technologies they choose.
-                  </Footnote>
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href='https://developer.mozilla.org/en-US/'
-                  target='_blank'
-                  prefetch={false}
-                >
-                  MDN
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href='https://www.w3.org/WAI/ARIA/apg/patterns/'
-                  target='_blank'
-                  prefetch={false}
-                >
-                  W3 Authoring Practices Guide
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href='https://css-tricks.com/'
-                  target='_blank'
-                  prefetch={false}
-                >
-                  CSS Tricks
-                </Link>
-              </li>
-            </List>
-          </div>
-
-          <div className={styles.listWrapper}>
-            <h3 className={clsx(styles.listHeader, styles.nestedListHeader)}>
-              Online educators I have a parasocial relationship with
-            </h3>
-            <List>
-              <li>
-                <Link
-                  href='https://www.udemy.com/user/coltsteele/'
-                  target='_blank'
-                  prefetch={false}
-                >
-                  Colt Steele
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href='https://www.joshwcomeau.com/'
-                  target='_blank'
-                  prefetch={false}
-                >
-                  Josh Comeau
-                </Link>
-              </li>
-            </List>
-          </div>
-        </div>
-
-        <div className={styles.listWrapper}>
           <h3 className={styles.listHeader}>
-            Things I learned on a creative design team
+            Things I&apos;ve learned in my creative career
           </h3>
           <List>
-            <li>Incredible attention to detail</li>
+            <li>Relentless attention to detail</li>
             <li>How to receive and give effective feedback</li>
             <li>
               How to do things you are only marginally sure you know how to do
             </li>
-            <li>How to finish things that, at times, feel insurmountable</li>
+            {/* <li>How to finish things that, at times, feel insurmountable</li> */}
             <li>The importance of whimsy and silliness</li>
+            <li>To always ask why</li>
+          </List>
+        </div>
+
+        <div className={styles.listWrapper}>
+          <h3 className={styles.listHeader}>Artists who inspire me</h3>
+          <List>
+            <li>
+              <Link
+                href='https://www.sindhaagha.com/'
+                target='_blank'
+                prefetch={false}
+              >
+                Sindha Agha
+              </Link>
+            </li>
+            {/* <li>
+              <Link
+                href='https://www.imdb.com/name/nm4369688/'
+                target='_blank'
+                prefetch={false}
+              >
+                Raphael Bob-Waksberg
+              </Link>
+            </li> */}
+            <li>
+              <Link
+                href='https://www.instagram.com/erikcavanaugh/'
+                target='_blank'
+                prefetch={false}
+              >
+                Erik Cavanaugh
+              </Link>
+            </li>
+            <li>
+              <Link
+                href='https://www.imdb.com/name/nm3564817/'
+                target='_blank'
+                prefetch={false}
+              >
+                Phoebe Waller-Bridge
+              </Link>
+            </li>
           </List>
         </div>
 
@@ -147,28 +118,32 @@ export default function About() {
             <li>Ego Is the Enemy - Ryan Holiday</li>
             <li>A Field Guide to Getting Lost - Rebecca Solnit</li>
             <li>A Secret History - Donna Tartt</li>
+            <li>
+              Someone Who Will Love You in All Your Damaged Glory - Raphael
+              Bob-Waksberg
+            </li>
           </List>
         </div>
         <div className={styles.listWrapper}>
           <h3 className={styles.listHeader}>
-            Some of my favorite memories from 2023
+            Some memorable moments from 2024
           </h3>
           <List>
-            <li>Backpacking the Lost Coast</li>
             <li>Climbing at Smith Rock</li>
-            <li>Spending a weekend in Edinburgh</li>
-            <li>Reading by the window</li>
+            <li>Making the best of a emergency trip to Sri Lanka</li>
             <li>
-              Seeing the very first run of{' '}
+              Appearing as a guest on the{' '}
               <Link
-                href='https://www.nytimes.com/2023/03/01/theater/the-lonely-few-lauren-patten.html'
+                href='https://podcasts.apple.com/us/podcast/38-intermezzo/id1560981966?i=1000680417771'
                 target='_blank'
                 prefetch={false}
               >
-                The Lonely Few
+                Literary Connections
               </Link>{' '}
-              at Geffen Playhouse
+              podcast
             </li>
+            <li>Reading by the window</li>
+            <li>Taking the helm of a sailboat with no idea what I was doing</li>
           </List>
         </div>
       </div>

@@ -104,40 +104,6 @@ function Navigation() {
           </NavLink>
         </NavigationMenu.Item>
 
-        <NavigationMenu.Item>
-          <NavLink
-            href='/code'
-            className={homepageNav}
-            // style={
-            //   pathname.startsWith('/code')
-            //     ? { textDecoration: 'line-through' }
-            //     : undefined
-            // }
-          >
-            code
-            {pathname.startsWith('/code') && (
-              <motion.svg
-                width='43'
-                height='8'
-                viewBox='0 0 43 8'
-                fill='none'
-                xmlns='http://www.w3.org/2000/svg'
-              >
-                <motion.path
-                  className={styles.codeSvg}
-                  d='M2 6C15.2004 6 27.7945 2 41 2'
-                  stroke='#005F73'
-                  strokeWidth='3'
-                  strokeLinecap='round'
-                  variants={underlines}
-                  initial='hidden'
-                  animate='visible'
-                />
-              </motion.svg>
-            )}
-          </NavLink>
-        </NavigationMenu.Item>
-
         <NavigationMenu.Item className={styles.subMenuContainer}>
           <NavigationMenu.Trigger
             className={clsx(styles.subMenuTrigger, homepageNav)}
@@ -194,6 +160,40 @@ function Navigation() {
               {/* <NavigationMenu.Viewport className={styles.viewport} /> */}
             </NavigationMenu.Sub>
           </NavigationMenu.Content>
+        </NavigationMenu.Item>
+
+        <NavigationMenu.Item>
+          <NavLink
+            href='/code'
+            className={homepageNav}
+            // style={
+            //   pathname.startsWith('/code')
+            //     ? { textDecoration: 'line-through' }
+            //     : undefined
+            // }
+          >
+            code
+            {pathname.startsWith('/code') && (
+              <motion.svg
+                width='43'
+                height='8'
+                viewBox='0 0 43 8'
+                fill='none'
+                xmlns='http://www.w3.org/2000/svg'
+              >
+                <motion.path
+                  className={styles.codeSvg}
+                  d='M2 6C15.2004 6 27.7945 2 41 2'
+                  stroke='#005F73'
+                  strokeWidth='3'
+                  strokeLinecap='round'
+                  variants={underlines}
+                  initial='hidden'
+                  animate='visible'
+                />
+              </motion.svg>
+            )}
+          </NavLink>
         </NavigationMenu.Item>
 
         <NavigationMenu.Item>

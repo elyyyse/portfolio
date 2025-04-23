@@ -12,10 +12,10 @@ function SimpleNav() {
           <Link href='/'>Home</Link>
         </li>
         <li>
-          <Link href='/code'>Code</Link>
+          <Link href='/film/prod'>Film</Link>
         </li>
         <li>
-          <Link href='/film/prod'>Film</Link>
+          <Link href='/code'>Code</Link>
         </li>
         <li>
           <Link href='/about'>About</Link>
