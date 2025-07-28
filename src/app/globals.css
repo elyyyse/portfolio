@@ -62,9 +62,23 @@ html {
   --40px: 2.5rem;
   --48px: 3rem;
 }
-/* body {
-  height: 100svh;
-} */
+
+/* Add this to dev version */
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex-grow: 1;
+}
+/* end footer styles */
 
 a,
 a:visited {
