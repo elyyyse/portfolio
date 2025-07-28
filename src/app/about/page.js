@@ -17,7 +17,7 @@ export default function About() {
       <div className={styles.heroContainer}>
         <div className={styles.textWrapper}>
           <h1 className={styles.h1}>
-            Hi, I&apos;m Elyse - a brand strategist and filmmaker based in the
+            Hi, I&apos;m Elyse - a brand storyteller and filmmaker based in the
             San Francisco Bay Area
           </h1>
           <p>
