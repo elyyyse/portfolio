@@ -130,7 +130,7 @@ export default function About() {
           </h3>
           <List>
             <li>Climbing at Smith Rock</li>
-            <li>Making the best of a emergency trip to Sri Lanka</li>
+            <li>Making the best of an emergency trip to Sri Lanka</li>
             <li>
               Appearing as a guest on the{' '}
               <Link
