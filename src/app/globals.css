@@ -75,4 +75,6 @@ a:hover {
   text-decoration: none;
 }
 
-/* Testing vercel :) */
+:focus-visible {
+  outline-offset: 2px;
+}
